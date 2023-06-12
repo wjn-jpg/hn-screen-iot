@@ -1,0 +1,41 @@
+mqtt:
+  server:
+    addr: 127.0.0.1
+    port: 8088
+    username: ntdq
+    password: ntdq
+    isNeedVerify: false
+
+spring:
+  profiles:
+    active: local #local
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/Manager?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&characterEncoding=utf8
+    username: root
+    password: 11111111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    ######################### Druid????????  #################
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 6000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+server:
+  port: 9090
+  address: 127.0.0.1
+modbus:
+  adder: 192.168.171.1
+  port: 502
+logging:
+  config: logback.xml

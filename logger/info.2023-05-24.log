@@ -1,0 +1,195 @@
+2023-05-24 09:48:12 [ main:379 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 18181 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-05-24 09:48:12 [ main:380 ] - [ INFO ] The following 1 profile is active: "local"
+2023-05-24 09:48:13 [ main:948 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-05-24 09:48:13 [ main:953 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 09:48:13 [ main:953 ] - [ INFO ] Starting service [Tomcat]
+2023-05-24 09:48:13 [ main:953 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-24 09:48:13 [ main:1002 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-05-24 09:48:13 [ main:1002 ] - [ INFO ] Root WebApplicationContext: initialization completed in 594 ms
+2023-05-24 09:48:13 [ main:1394 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 09:48:14 [ main:1406 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-24 09:48:14 [ main:1412 ] - [ INFO ] Started HnScreenApplication in 1.33 seconds (JVM running for 2.13)
+2023-05-24 09:53:51 [ http-nio-127.0.0.1-9090-exec-1:339347 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24 09:53:51 [ http-nio-127.0.0.1-9090-exec-1:339348 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-05-24 09:53:51 [ http-nio-127.0.0.1-9090-exec-1:339348 ] - [ INFO ] Completed initialization in 0 ms
+2023-05-24 09:53:51 [ http-nio-127.0.0.1-9090-exec-1:339369 ] - [ WARN ] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: "1628202088903159810l"]
+2023-05-24 09:54:20 [ http-nio-127.0.0.1-9090-exec-2:368375 ] - [ INFO ] {dataSource-1} inited
+2023-05-24 10:30:38 [ SpringApplicationShutdownHook:2545964 ] - [ INFO ] {dataSource-1} closing ...
+2023-05-24 10:30:38 [ SpringApplicationShutdownHook:2545965 ] - [ INFO ] {dataSource-1} closed
+2023-05-24 10:30:41 [ main:322 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 37685 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-05-24 10:30:41 [ main:324 ] - [ INFO ] The following 1 profile is active: "local"
+2023-05-24 10:30:41 [ main:828 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-05-24 10:30:41 [ main:831 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 10:30:41 [ main:832 ] - [ INFO ] Starting service [Tomcat]
+2023-05-24 10:30:41 [ main:832 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-24 10:30:41 [ main:873 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-05-24 10:30:41 [ main:873 ] - [ INFO ] Root WebApplicationContext: initialization completed in 522 ms
+2023-05-24 10:30:42 [ main:1232 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 10:30:42 [ main:1244 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-24 10:30:42 [ main:1250 ] - [ INFO ] Started HnScreenApplication in 1.166 seconds (JVM running for 1.453)
+2023-05-24 10:30:44 [ http-nio-127.0.0.1-9090-exec-1:3993 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24 10:30:44 [ http-nio-127.0.0.1-9090-exec-1:3993 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-05-24 10:30:44 [ http-nio-127.0.0.1-9090-exec-1:3994 ] - [ INFO ] Completed initialization in 1 ms
+2023-05-24 10:31:54 [ SpringApplicationShutdownHook:73609 ] - [ INFO ] {dataSource-0} closing ...
+2023-05-24 10:32:03 [ main:312 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 37709 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-05-24 10:32:03 [ main:313 ] - [ INFO ] The following 1 profile is active: "local"
+2023-05-24 10:32:04 [ main:804 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-05-24 10:32:04 [ main:807 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 10:32:04 [ main:807 ] - [ INFO ] Starting service [Tomcat]
+2023-05-24 10:32:04 [ main:808 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-24 10:32:04 [ main:845 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-05-24 10:32:04 [ main:845 ] - [ INFO ] Root WebApplicationContext: initialization completed in 506 ms
+2023-05-24 10:32:04 [ main:1188 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 10:32:04 [ main:1200 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-24 10:32:04 [ main:1206 ] - [ INFO ] Started HnScreenApplication in 1.129 seconds (JVM running for 1.409)
+2023-05-24 10:32:06 [ http-nio-127.0.0.1-9090-exec-1:3571 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24 10:32:06 [ http-nio-127.0.0.1-9090-exec-1:3571 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-05-24 10:32:06 [ http-nio-127.0.0.1-9090-exec-1:3572 ] - [ INFO ] Completed initialization in 1 ms
+2023-05-24 10:32:18 [ http-nio-127.0.0.1-9090-exec-1:14732 ] - [ INFO ] {dataSource-1} inited
+2023-05-24 10:52:38 [ SpringApplicationShutdownHook:1234897 ] - [ INFO ] {dataSource-1} closing ...
+2023-05-24 10:52:38 [ SpringApplicationShutdownHook:1234900 ] - [ INFO ] {dataSource-1} closed
+2023-05-24 10:52:40 [ main:314 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 37913 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-05-24 10:52:40 [ main:315 ] - [ INFO ] The following 1 profile is active: "local"
+2023-05-24 10:52:40 [ main:781 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-05-24 10:52:40 [ main:784 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 10:52:40 [ main:784 ] - [ INFO ] Starting service [Tomcat]
+2023-05-24 10:52:40 [ main:784 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-24 10:52:40 [ main:823 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-05-24 10:52:40 [ main:823 ] - [ INFO ] Root WebApplicationContext: initialization completed in 484 ms
+2023-05-24 10:52:41 [ main:1178 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 10:52:41 [ main:1189 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-24 10:52:41 [ main:1195 ] - [ INFO ] Started HnScreenApplication in 1.123 seconds (JVM running for 1.402)
+2023-05-24 10:52:42 [ http-nio-127.0.0.1-9090-exec-1:2913 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24 10:52:42 [ http-nio-127.0.0.1-9090-exec-1:2913 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-05-24 10:52:42 [ http-nio-127.0.0.1-9090-exec-1:2914 ] - [ INFO ] Completed initialization in 1 ms
+2023-05-24 10:52:42 [ http-nio-127.0.0.1-9090-exec-1:2981 ] - [ INFO ] {dataSource-1} inited
+2023-05-24 14:38:15 [ SpringApplicationShutdownHook:13535406 ] - [ INFO ] {dataSource-1} closing ...
+2023-05-24 14:38:15 [ SpringApplicationShutdownHook:13535407 ] - [ INFO ] {dataSource-1} closed
+2023-05-24 14:38:17 [ main:363 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 45456 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-05-24 14:38:17 [ main:364 ] - [ INFO ] The following 1 profile is active: "local"
+2023-05-24 14:38:17 [ main:880 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-05-24 14:38:17 [ main:884 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 14:38:17 [ main:884 ] - [ INFO ] Starting service [Tomcat]
+2023-05-24 14:38:17 [ main:884 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-24 14:38:17 [ main:927 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-05-24 14:38:17 [ main:928 ] - [ INFO ] Root WebApplicationContext: initialization completed in 537 ms
+2023-05-24 14:38:18 [ main:1151 ] - [ INFO ] {dataSource-1} inited
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520584 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520585 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520586 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520587 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520588 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520588 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520589 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520590 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:03:37 [ RMI TCP Accept-0:1520590 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51039] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-05-24 15:17:07 [ main:332 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 46022 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-05-24 15:17:07 [ main:334 ] - [ INFO ] The following 1 profile is active: "local"
+2023-05-24 15:17:08 [ main:840 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-05-24 15:17:08 [ main:845 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 15:17:08 [ main:845 ] - [ INFO ] Starting service [Tomcat]
+2023-05-24 15:17:08 [ main:845 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-24 15:17:08 [ main:888 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-05-24 15:17:08 [ main:888 ] - [ INFO ] Root WebApplicationContext: initialization completed in 528 ms
+2023-05-24 15:17:08 [ main:1049 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-05-24 15:17:08 [ main:1123 ] - [ INFO ] {dataSource-1} inited
+2023-05-24 15:17:35 [ main:27714 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pointMapping' defined in file [/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes/com/ntdq/hnscreen/handler/mapping/PointMapping.class]: Invocation of init method failed; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+2023-05-24 15:17:35 [ main:27715 ] - [ INFO ] {dataSource-1} closing ...
+2023-05-24 15:17:35 [ main:27718 ] - [ INFO ] {dataSource-1} closed
+2023-05-24 15:17:35 [ main:27720 ] - [ INFO ] Stopping service [Tomcat]
+2023-05-24 15:17:35 [ main:27729 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-24 15:17:40 [ main:366 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 46039 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-05-24 15:17:40 [ main:368 ] - [ INFO ] The following 1 profile is active: "local"
+2023-05-24 15:17:40 [ main:903 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-05-24 15:17:40 [ main:908 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 15:17:40 [ main:908 ] - [ INFO ] Starting service [Tomcat]
+2023-05-24 15:17:40 [ main:908 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-24 15:17:40 [ main:964 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-05-24 15:17:40 [ main:964 ] - [ INFO ] Root WebApplicationContext: initialization completed in 569 ms
+2023-05-24 15:17:40 [ main:1133 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-05-24 15:17:40 [ main:1207 ] - [ INFO ] {dataSource-1} inited
+2023-05-24 15:18:34 [ main:54735 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pointMapping' defined in file [/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes/com/ntdq/hnscreen/handler/mapping/PointMapping.class]: Invocation of init method failed; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+2023-05-24 15:18:34 [ main:54735 ] - [ INFO ] {dataSource-1} closing ...
+2023-05-24 15:18:34 [ main:54738 ] - [ INFO ] {dataSource-1} closed
+2023-05-24 15:18:34 [ main:54740 ] - [ INFO ] Stopping service [Tomcat]
+2023-05-24 15:18:34 [ main:54748 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-24 15:18:37 [ main:329 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 46055 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-05-24 15:18:37 [ main:331 ] - [ INFO ] The following 1 profile is active: "local"
+2023-05-24 15:18:37 [ main:841 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-05-24 15:18:37 [ main:846 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 15:18:37 [ main:846 ] - [ INFO ] Starting service [Tomcat]
+2023-05-24 15:18:37 [ main:846 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-24 15:18:37 [ main:886 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-05-24 15:18:37 [ main:886 ] - [ INFO ] Root WebApplicationContext: initialization completed in 527 ms
+2023-05-24 15:18:37 [ main:1048 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-05-24 15:18:37 [ main:1116 ] - [ INFO ] {dataSource-1} inited
+2023-05-24 15:18:56 [ Thread-5:19966 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_WholeGroupStartup
+2023-05-24 15:18:56 [ Thread-5:19973 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_StartCommand
+2023-05-24 15:18:56 [ Thread-5:19974 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_StartCommand
+2023-05-24 15:18:56 [ Thread-5:19974 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_RunNormal
+2023-05-24 15:18:56 [ Thread-5:19974 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_RunNormal
+2023-05-24 15:18:56 [ Thread-5:19974 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_PositionInReadiness
+2023-05-24 15:18:56 [ Thread-5:19974 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_ShutDownNormal
+2023-05-24 15:18:56 [ Thread-5:19974 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_ShutDownFault
+2023-05-24 15:18:56 [ Thread-5:19974 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_ActivePowerAC
+2023-05-24 15:18:56 [ Thread-5:19975 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_InActivePowerAC
+2023-05-24 15:18:56 [ Thread-5:19975 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_ConversionEfficiency
+2023-05-24 15:18:56 [ Thread-5:19975 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_PowerFactory
+2023-05-24 15:18:56 [ Thread-5:19975 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_TotalGenPowerLow
+2023-05-24 15:18:56 [ Thread-5:19975 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_TotalGenPowerLow
+2023-05-24 15:18:56 [ Thread-5:19976 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_TotalDisChargeLow
+2023-05-24 15:18:56 [ Thread-5:19976 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_TotalDisChargeHigh
+2023-05-24 15:18:56 [ main:20148 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-05-24 15:18:56 [ main:20161 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-24 15:18:56 [ main:20168 ] - [ INFO ] Started HnScreenApplication in 20.091 seconds (JVM running for 20.374)
+2023-05-24 20:44:30 [ SpringApplicationShutdownHook:19553217 ] - [ INFO ] {dataSource-1} closing ...
+2023-05-24 20:44:30 [ SpringApplicationShutdownHook:19553219 ] - [ INFO ] {dataSource-1} closed

@@ -1,0 +1,360 @@
+2023-06-08 10:16:06 [ main:323 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 19747 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:16:06 [ main:324 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:16:07 [ main:831 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:16:07 [ main:835 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:16:07 [ main:836 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:16:07 [ main:836 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:16:07 [ main:879 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:16:07 [ main:880 ] - [ INFO ] Root WebApplicationContext: initialization completed in 532 ms
+2023-06-08 10:16:07 [ main:1104 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:16:07 [ main:1148 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:17:48 [ Thread-4:102153 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_WholeGroupStartup
+2023-06-08 10:17:48 [ main:102160 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'modBusTcpClientConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'modbus.addr' in value "${modbus.addr}"
+2023-06-08 10:17:48 [ main:102161 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:17:48 [ Thread-4:102164 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_StartCommand
+2023-06-08 10:17:48 [ Thread-4:102165 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_StartCommand
+2023-06-08 10:17:48 [ main:102165 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 10:17:48 [ Thread-4:102165 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_RunNormal
+2023-06-08 10:17:48 [ Thread-4:102165 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_RunNormal
+2023-06-08 10:17:48 [ Thread-4:102165 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_PositionInReadiness
+2023-06-08 10:17:48 [ Thread-4:102165 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_ShutDownNormal
+2023-06-08 10:17:48 [ Thread-4:102166 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_ShutDownFault
+2023-06-08 10:17:48 [ Thread-4:102166 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_ActivePowerAC
+2023-06-08 10:17:48 [ Thread-4:102166 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_InActivePowerAC
+2023-06-08 10:17:48 [ Thread-4:102166 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_ConversionEfficiency
+2023-06-08 10:17:48 [ Thread-4:102167 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_PowerFactory
+2023-06-08 10:17:48 [ Thread-4:102167 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_TotalGenPowerLow
+2023-06-08 10:17:48 [ Thread-4:102167 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_TotalGenPowerLow
+2023-06-08 10:17:48 [ Thread-4:102167 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_TotalDisChargeLow
+2023-06-08 10:17:48 [ Thread-4:102167 ] - [ INFO ] putHash key:ntdq:817e1662-ba66-4b35-add9-c68f32209a4e_TotalDisChargeHigh
+2023-06-08 10:17:48 [ main:102169 ] - [ INFO ] Stopping service [Tomcat]
+2023-06-08 10:17:48 [ main:102179 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-08 10:17:54 [ main:329 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 20092 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:17:54 [ main:330 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:17:54 [ main:812 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:17:54 [ main:815 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:17:54 [ main:816 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:17:54 [ main:816 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:17:54 [ main:853 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:17:54 [ main:853 ] - [ INFO ] Root WebApplicationContext: initialization completed in 498 ms
+2023-06-08 10:17:54 [ main:1049 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:17:55 [ main:1088 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:17:55 [ main:1263 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'modBusTcpClientConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'modbus.addr' in value "${modbus.addr}"
+2023-06-08 10:17:55 [ main:1263 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:17:55 [ main:1266 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 10:17:55 [ main:1267 ] - [ INFO ] Stopping service [Tomcat]
+2023-06-08 10:17:55 [ main:1273 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-08 10:18:17 [ main:337 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 20170 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:18:17 [ main:338 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:18:17 [ main:855 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:18:17 [ main:860 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:18:17 [ main:861 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:18:17 [ main:861 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:18:17 [ main:904 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:18:17 [ main:904 ] - [ INFO ] Root WebApplicationContext: initialization completed in 543 ms
+2023-06-08 10:18:18 [ main:1117 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:18:18 [ main:1159 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:18:18 [ main:1498 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:18:18 [ main:1510 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 10:18:18 [ main:1516 ] - [ INFO ] Started HnScreenApplication in 1.443 seconds (JVM running for 1.709)
+2023-06-08 10:19:04 [ SpringApplicationShutdownHook:47735 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:19:04 [ SpringApplicationShutdownHook:47738 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 10:19:07 [ main:314 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 20334 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:19:07 [ main:316 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:19:07 [ main:816 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:19:07 [ main:820 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:19:07 [ main:820 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:19:07 [ main:820 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:19:07 [ main:863 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:19:07 [ main:863 ] - [ INFO ] Root WebApplicationContext: initialization completed in 520 ms
+2023-06-08 10:19:07 [ main:1072 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:19:07 [ main:1111 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:19:11 [ main:4893 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:26:23 [ main:315 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 21737 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:26:23 [ main:317 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:26:24 [ main:815 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:26:24 [ main:819 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:26:24 [ main:819 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:26:24 [ main:819 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:26:24 [ main:858 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:26:24 [ main:858 ] - [ INFO ] Root WebApplicationContext: initialization completed in 518 ms
+2023-06-08 10:26:24 [ main:1056 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:26:24 [ main:1096 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:26:26 [ main:3606 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:31:14 [ RMI TCP Accept-0:291454 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=52504] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-08 10:31:17 [ main:336 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 22661 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:31:17 [ main:337 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:31:17 [ main:810 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:31:17 [ main:814 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:31:17 [ main:815 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:31:17 [ main:815 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:31:17 [ main:853 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:31:17 [ main:853 ] - [ INFO ] Root WebApplicationContext: initialization completed in 490 ms
+2023-06-08 10:31:17 [ main:1055 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:31:17 [ main:1097 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:31:19 [ main:2810 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:31:40 [ main:24102 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:31:40 [ main:24114 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 10:31:40 [ main:24120 ] - [ INFO ] Started HnScreenApplication in 24.045 seconds (JVM running for 24.326)
+2023-06-08 10:38:13 [ SpringApplicationShutdownHook:416583 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:38:13 [ SpringApplicationShutdownHook:416585 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 10:38:15 [ main:306 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 23979 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:38:15 [ main:308 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:38:16 [ main:770 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:38:16 [ main:774 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:38:16 [ main:774 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:38:16 [ main:774 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:38:16 [ main:811 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:38:16 [ main:811 ] - [ INFO ] Root WebApplicationContext: initialization completed in 480 ms
+2023-06-08 10:38:16 [ main:1004 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:38:16 [ main:1043 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:38:19 [ main:4477 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:38:22 [ main:7028 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:38:22 [ main:7041 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 10:38:22 [ main:7046 ] - [ INFO ] Started HnScreenApplication in 6.976 seconds (JVM running for 7.236)
+2023-06-08 10:38:22 [ pool-2-thread-2:7101 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x960dbbd3]'
+2023-06-08 10:38:22 [ pool-2-thread-1:7101 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0xe7fe9c13]'
+2023-06-08 10:38:22 [ pool-2-thread-3:7101 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x19583096]'
+2023-06-08 10:38:22 [ pool-2-thread-1:7109 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:38:22 [ pool-2-thread-3:7109 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:38:22 [ pool-2-thread-2:7110 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:39:33 [ SpringApplicationShutdownHook:78297 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:39:33 [ SpringApplicationShutdownHook:78299 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 10:39:40 [ main:335 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 24256 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:39:40 [ main:336 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:39:41 [ main:852 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:39:41 [ main:856 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:39:41 [ main:857 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:39:41 [ main:857 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:39:41 [ main:894 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:39:41 [ main:895 ] - [ INFO ] Root WebApplicationContext: initialization completed in 536 ms
+2023-06-08 10:39:41 [ main:1090 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:39:41 [ main:1129 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:39:42 [ main:1755 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:39:42 [ main:2188 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:39:42 [ main:2205 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 10:39:42 [ main:2212 ] - [ INFO ] Started HnScreenApplication in 2.135 seconds (JVM running for 2.411)
+2023-06-08 10:39:42 [ pool-2-thread-2:2262 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x54e334cf]'
+2023-06-08 10:39:42 [ pool-2-thread-1:2262 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x441afec6]'
+2023-06-08 10:39:42 [ pool-2-thread-3:2262 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0xfaf9e0c9]'
+2023-06-08 10:39:42 [ pool-2-thread-1:2269 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:39:42 [ pool-2-thread-1:2269 ] - [ INFO ] ModBus客户端:modbus.client3.serverName连接失败...
+2023-06-08 10:39:42 [ pool-2-thread-2:2269 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:39:42 [ pool-2-thread-2:2269 ] - [ INFO ] ModBus客户端:modbus.client1.serverName连接失败...
+2023-06-08 10:39:42 [ pool-2-thread-3:2270 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:39:42 [ pool-2-thread-3:2270 ] - [ INFO ] ModBus客户端:modbus.client2.serverName连接失败...
+2023-06-08 10:40:02 [ SpringApplicationShutdownHook:22546 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:40:02 [ SpringApplicationShutdownHook:22548 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 10:40:04 [ main:319 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 24337 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:40:04 [ main:320 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:40:05 [ main:812 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:40:05 [ main:815 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:40:05 [ main:816 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:40:05 [ main:816 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:40:05 [ main:858 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:40:05 [ main:858 ] - [ INFO ] Root WebApplicationContext: initialization completed in 515 ms
+2023-06-08 10:40:05 [ main:1060 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:40:05 [ main:1100 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:40:07 [ main:3371 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:40:39 [ main:308 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 24449 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:40:39 [ main:309 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:40:39 [ main:784 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:40:39 [ main:787 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:40:39 [ main:788 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:40:39 [ main:788 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:40:39 [ main:825 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:40:39 [ main:825 ] - [ INFO ] Root WebApplicationContext: initialization completed in 493 ms
+2023-06-08 10:40:39 [ main:1030 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:40:39 [ main:1070 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:40:41 [ main:2349 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:42:17 [ main:308 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 24760 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:42:17 [ main:309 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:42:17 [ main:812 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:42:17 [ main:815 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:42:17 [ main:816 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:42:17 [ main:816 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:42:17 [ main:855 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:42:17 [ main:855 ] - [ INFO ] Root WebApplicationContext: initialization completed in 521 ms
+2023-06-08 10:42:17 [ main:1057 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:42:17 [ main:1096 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:42:19 [ main:3017 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:42:35 [ main:18697 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:42:35 [ main:18709 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 10:42:35 [ main:18715 ] - [ INFO ] Started HnScreenApplication in 18.642 seconds (JVM running for 18.906)
+2023-06-08 10:42:35 [ pool-2-thread-1:18768 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0xd4264c5d]'
+2023-06-08 10:42:35 [ pool-2-thread-3:18768 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x6a22d9f7]'
+2023-06-08 10:42:35 [ pool-2-thread-2:18768 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x8eafecca]'
+2023-06-08 10:42:35 [ pool-2-thread-3:18775 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:42:35 [ pool-2-thread-3:18775 ] - [ INFO ] ModBus客户端:Pho连接失败...
+2023-06-08 10:42:35 [ pool-2-thread-2:18776 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:42:35 [ pool-2-thread-2:18776 ] - [ INFO ] ModBus客户端:Energy连接失败...
+2023-06-08 10:42:35 [ pool-2-thread-1:18776 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:42:35 [ pool-2-thread-1:18776 ] - [ INFO ] ModBus客户端:Fan连接失败...
+2023-06-08 10:45:43 [ SpringApplicationShutdownHook:207086 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:45:43 [ SpringApplicationShutdownHook:207088 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 10:49:01 [ main:311 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 1125 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:49:01 [ main:312 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:49:02 [ main:792 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:49:02 [ main:796 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:49:02 [ main:797 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:49:02 [ main:797 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:49:02 [ main:844 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:49:02 [ main:845 ] - [ INFO ] Root WebApplicationContext: initialization completed in 511 ms
+2023-06-08 10:49:02 [ main:1027 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:49:02 [ main:1103 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:49:02 [ main:1308 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:49:02 [ main:1446 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:49:02 [ main:1456 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 10:49:02 [ main:1463 ] - [ INFO ] Started HnScreenApplication in 1.381 seconds (JVM running for 1.71)
+2023-06-08 10:49:02 [ pool-2-thread-2:1501 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0xdffae799]'
+2023-06-08 10:49:02 [ pool-2-thread-3:1501 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x584abb09]'
+2023-06-08 10:49:02 [ pool-2-thread-1:1501 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x661f3f93]'
+2023-06-08 10:49:28 [ SpringApplicationShutdownHook:26710 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:49:28 [ SpringApplicationShutdownHook:26712 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 10:49:33 [ main:312 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 1139 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 10:49:33 [ main:313 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 10:49:33 [ main:790 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 10:49:33 [ main:793 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:49:33 [ main:794 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 10:49:33 [ main:794 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 10:49:34 [ main:831 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 10:49:34 [ main:831 ] - [ INFO ] Root WebApplicationContext: initialization completed in 494 ms
+2023-06-08 10:49:34 [ main:1024 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 10:49:34 [ main:1065 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 10:49:36 [ main:3023 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端
+2023-06-08 10:49:36 [ main:3663 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 10:49:36 [ main:3682 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 10:49:36 [ main:3688 ] - [ INFO ] Started HnScreenApplication in 3.613 seconds (JVM running for 4.104)
+2023-06-08 10:49:40 [ pool-2-thread-2:7308 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0xe9cb6268]'
+2023-06-08 10:49:40 [ pool-2-thread-1:7308 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0x7e97295e]'
+2023-06-08 10:49:40 [ pool-2-thread-3:7308 ] - [ WARN ] Unknown channel option 'SO_BACKLOG' for channel '[id: 0xdba8819d]'
+2023-06-08 10:50:10 [ pool-2-thread-2:37328 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:50:10 [ pool-2-thread-2:37329 ] - [ INFO ] ModBus客户端:Energy连接失败...
+2023-06-08 10:50:35 [ pool-2-thread-1:62593 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:50:35 [ pool-2-thread-1:62593 ] - [ INFO ] ModBus客户端:Fan连接失败...
+2023-06-08 10:50:35 [ pool-2-thread-3:62593 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 10:50:35 [ pool-2-thread-3:62593 ] - [ INFO ] ModBus客户端:Pho连接失败...
+2023-06-08 10:51:34 [ SpringApplicationShutdownHook:121286 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 10:51:34 [ SpringApplicationShutdownHook:121289 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 15:45:41 [ main:333 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 12786 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 15:45:41 [ main:334 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 15:45:42 [ main:925 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 15:45:42 [ main:930 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:45:42 [ main:930 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 15:45:42 [ main:930 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:45:42 [ main:978 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 15:45:42 [ main:979 ] - [ INFO ] Root WebApplicationContext: initialization completed in 616 ms
+2023-06-08 15:45:42 [ main:1202 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 15:45:42 [ main:1222 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pointMapping': Unsatisfied dependency expressed through method 'setRedisClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisClient' defined in file [/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes/com/ntdq/hnscreen/redis/RedisClient.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ntdq.hnscreen.redis.RedisClient]: Constructor threw exception; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+2023-06-08 15:45:42 [ main:1223 ] - [ INFO ] {dataSource-0} closing ...
+2023-06-08 15:45:42 [ main:1224 ] - [ INFO ] Stopping service [Tomcat]
+2023-06-08 15:45:42 [ main:1235 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-08 15:46:05 [ main:331 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 12894 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 15:46:05 [ main:333 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 15:46:05 [ main:867 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 15:46:05 [ main:872 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:46:05 [ main:872 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 15:46:05 [ main:872 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:46:05 [ main:924 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 15:46:05 [ main:924 ] - [ INFO ] Root WebApplicationContext: initialization completed in 565 ms
+2023-06-08 15:46:05 [ main:1140 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 15:46:05 [ main:1185 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 15:46:08 [ main:3308 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-08 15:47:20 [ main:75686 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:47:20 [ main:75699 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 15:47:20 [ main:75706 ] - [ INFO ] Started HnScreenApplication in 75.627 seconds (JVM running for 75.934)
+2023-06-08 15:47:25 [ pool-3-thread-2:80621 ] - [ INFO ] ModBus服务已启动 端口为:0
+2023-06-08 15:47:25 [ pool-3-thread-1:80621 ] - [ INFO ] ModBus服务已启动 端口为:0
+2023-06-08 15:47:55 [ pool-2-thread-1:110631 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 15:47:55 [ pool-2-thread-1:110632 ] - [ INFO ] ModBus客户端:Energy连接失败...
+2023-06-08 15:49:10 [ SpringApplicationShutdownHook:185956 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 15:49:10 [ SpringApplicationShutdownHook:185958 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 15:49:12 [ main:307 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 13481 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 15:49:12 [ main:308 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 15:49:13 [ main:795 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 15:49:13 [ main:799 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:49:13 [ main:799 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 15:49:13 [ main:799 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:49:13 [ main:835 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 15:49:13 [ main:835 ] - [ INFO ] Root WebApplicationContext: initialization completed in 503 ms
+2023-06-08 15:49:13 [ main:1039 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 15:49:13 [ main:1080 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 15:49:15 [ main:2721 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-08 15:49:36 [ main:331 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 13563 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 15:49:36 [ main:333 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 15:49:37 [ main:843 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 15:49:37 [ main:847 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:49:37 [ main:847 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 15:49:37 [ main:847 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:49:37 [ main:885 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 15:49:37 [ main:885 ] - [ INFO ] Root WebApplicationContext: initialization completed in 524 ms
+2023-06-08 15:49:37 [ main:1083 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 15:49:37 [ main:1123 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 15:49:38 [ main:2024 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-08 15:50:24 [ main:306 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 13720 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 15:50:24 [ main:307 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 15:50:24 [ main:813 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 15:50:24 [ main:816 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:50:24 [ main:817 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 15:50:24 [ main:817 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:50:24 [ main:855 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 15:50:24 [ main:855 ] - [ INFO ] Root WebApplicationContext: initialization completed in 524 ms
+2023-06-08 15:50:24 [ main:1057 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 15:50:24 [ main:1098 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 15:50:26 [ main:2861 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-08 15:50:26 [ main:2867 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'modBusTcpConfig' defined in file [/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes/com/ntdq/hnscreen/modbus/config/ModBusTcpConfig.class]: Invocation of init method failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Integer
+2023-06-08 15:50:26 [ main:2867 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 15:50:26 [ main:2873 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 15:50:26 [ main:2876 ] - [ INFO ] Stopping service [Tomcat]
+2023-06-08 15:50:26 [ main:2888 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-08 15:50:47 [ main:305 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 13798 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 15:50:47 [ main:306 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 15:50:47 [ main:825 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 15:50:47 [ main:829 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:50:47 [ main:830 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 15:50:47 [ main:830 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:50:47 [ main:867 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 15:50:47 [ main:868 ] - [ INFO ] Root WebApplicationContext: initialization completed in 535 ms
+2023-06-08 15:50:47 [ main:1077 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 15:50:48 [ main:1117 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 15:50:48 [ main:1958 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-08 15:51:08 [ main:21905 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:51:08 [ main:21919 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 15:51:08 [ main:21927 ] - [ INFO ] Started HnScreenApplication in 21.849 seconds (JVM running for 22.139)
+2023-06-08 15:51:11 [ pool-3-thread-1:24125 ] - [ INFO ] ModBus服务已启动 端口为:503
+2023-06-08 15:51:11 [ pool-3-thread-2:24124 ] - [ INFO ] ModBus服务已启动 端口为:502
+2023-06-08 15:51:40 [ SpringApplicationShutdownHook:53701 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 15:51:40 [ SpringApplicationShutdownHook:53703 ] - [ INFO ] {dataSource-1} closed
+2023-06-08 15:51:48 [ main:271 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14004 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-08 15:51:48 [ main:272 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-08 15:51:49 [ main:698 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-08 15:51:49 [ main:702 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:51:49 [ main:702 ] - [ INFO ] Starting service [Tomcat]
+2023-06-08 15:51:49 [ main:702 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:51:49 [ main:740 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-08 15:51:49 [ main:740 ] - [ INFO ] Root WebApplicationContext: initialization completed in 447 ms
+2023-06-08 15:51:49 [ main:887 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-08 15:51:49 [ main:952 ] - [ INFO ] {dataSource-1} inited
+2023-06-08 15:51:49 [ main:1133 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-08 15:51:49 [ main:1303 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-08 15:51:49 [ main:1314 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-08 15:51:49 [ main:1320 ] - [ INFO ] Started HnScreenApplication in 1.253 seconds (JVM running for 1.51)
+2023-06-08 15:51:50 [ pool-3-thread-2:1352 ] - [ INFO ] ModBus:Pro服务已启动 端口为:502
+2023-06-08 15:51:50 [ pool-3-thread-1:1352 ] - [ INFO ] ModBus:Energy服务已启动 端口为:503
+2023-06-08 15:52:20 [ pool-2-thread-1:31361 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-08 15:52:20 [ pool-2-thread-1:31362 ] - [ INFO ] ModBus客户端:Energy连接失败...
+2023-06-08 16:26:54 [ SpringApplicationShutdownHook:2106097 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-08 16:26:54 [ SpringApplicationShutdownHook:2106098 ] - [ INFO ] {dataSource-1} closed

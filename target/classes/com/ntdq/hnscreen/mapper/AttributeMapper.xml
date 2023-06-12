@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ntdq.hnscreen.mapper.AttributeMapper">
+
+
+    <resultMap id="attributeList" type="com.ntdq.hnscreen.domain.attribute.TemplateAttribute">
+        <result property="templateId" column="tmpl_id"/>
+        <result property="atrbCode" column="atrb_code"/>
+        <result property="atrbName" column="atrb_name"/>
+        <result property="atrbDataLength" column="atrb_data_length"/>
+        <result property="atrbMessageAddress" column="atrb_meas_address"/>
+        <result property="atrbCoefficient" column="atrb_coefficient"/>
+        <result property="atrbType" column="atrb_type"/>
+    </resultMap>
+
+    <insert id="saveBatchAttribute" parameterType="java.util.List">
+        insert into t_device_template_attribute (tmpl_id,atrb_code,atrb_name,atrb_data_length
+        ,atrb_meas_address,atrb_coefficient,atrb_type) values
+        <foreach collection="templateAttributes" item="attribute" index="index" separator=",">
+            (#{attribute.templateId},#{attribute.atrbCode},#{attribute.atrbName},
+            #{attribute.atrbDataLength},#{attribute.atrbMessageAddress},
+             #{attribute.atrbCoefficient},#{attribute.atrbType})
+        </foreach>
+    </insert>
+
+    <select id="findAllAttributeInfoByTemplateId" resultMap="attributeList">
+        select * from t_device_template_attribute where tmpl_id = #{templateId}
+    </select>
+
+
+</mapper>

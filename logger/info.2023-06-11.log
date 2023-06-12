@@ -1,0 +1,273 @@
+2023-06-11 20:19:28 [ main:340 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14302 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-11 20:19:28 [ main:342 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-11 20:19:41 [ main:13187 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-11 20:19:41 [ main:13191 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:19:41 [ main:13192 ] - [ INFO ] Starting service [Tomcat]
+2023-06-11 20:19:41 [ main:13192 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-11 20:19:41 [ main:13245 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-11 20:19:41 [ main:13246 ] - [ INFO ] Root WebApplicationContext: initialization completed in 12877 ms
+2023-06-11 20:19:42 [ main:13475 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-11 20:19:42 [ main:13497 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pointMapping': Unsatisfied dependency expressed through method 'setRedisClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisClient' defined in file [/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes/com/ntdq/hnscreen/redis/RedisClient.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ntdq.hnscreen.redis.RedisClient]: Constructor threw exception; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+2023-06-11 20:19:42 [ main:13497 ] - [ INFO ] {dataSource-0} closing ...
+2023-06-11 20:19:42 [ main:13498 ] - [ INFO ] Stopping service [Tomcat]
+2023-06-11 20:19:42 [ main:13509 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-11 20:20:23 [ main:348 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14351 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-11 20:20:23 [ main:350 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-11 20:20:24 [ main:902 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-11 20:20:24 [ main:907 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:20:24 [ main:908 ] - [ INFO ] Starting service [Tomcat]
+2023-06-11 20:20:24 [ main:908 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-11 20:20:24 [ main:966 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-11 20:20:24 [ main:966 ] - [ INFO ] Root WebApplicationContext: initialization completed in 590 ms
+2023-06-11 20:20:24 [ main:1167 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-11 20:20:24 [ main:1192 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-11 20:20:24 [ main:1192 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-11 20:20:24 [ main:1210 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-11 20:20:24 [ main:1211 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'powerStationConfig' defined in file [/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes/com/ntdq/hnscreen/udp/config/PowerStationConfig.class]: Invocation of init method failed; nested exception is java.lang.NumberFormatException: null
+2023-06-11 20:20:24 [ main:1211 ] - [ INFO ] {dataSource-0} closing ...
+2023-06-11 20:20:24 [ main:1213 ] - [ INFO ] Stopping service [Tomcat]
+2023-06-11 20:20:24 [ main:1223 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-11 20:20:43 [ main:354 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14359 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-11 20:20:43 [ main:355 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-11 20:20:44 [ main:908 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-11 20:20:44 [ main:913 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:20:44 [ main:914 ] - [ INFO ] Starting service [Tomcat]
+2023-06-11 20:20:44 [ main:914 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-11 20:20:44 [ main:963 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-11 20:20:44 [ main:963 ] - [ INFO ] Root WebApplicationContext: initialization completed in 581 ms
+2023-06-11 20:20:44 [ main:1169 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-11 20:20:44 [ main:1193 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-11 20:20:44 [ main:1193 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-11 20:20:44 [ main:1208 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-11 20:21:07 [ main:23626 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'powerStationConfig' defined in file [/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes/com/ntdq/hnscreen/udp/config/PowerStationConfig.class]: Invocation of init method failed; nested exception is java.lang.NumberFormatException: null
+2023-06-11 20:21:07 [ main:23627 ] - [ INFO ] {dataSource-0} closing ...
+2023-06-11 20:21:07 [ main:23630 ] - [ INFO ] Stopping service [Tomcat]
+2023-06-11 20:21:07 [ main:23644 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-11 20:21:09 [ main:329 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14371 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-11 20:21:09 [ main:331 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-11 20:21:10 [ main:901 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-11 20:21:10 [ main:905 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:21:10 [ main:906 ] - [ INFO ] Starting service [Tomcat]
+2023-06-11 20:21:10 [ main:906 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-11 20:21:10 [ main:964 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-11 20:21:10 [ main:964 ] - [ INFO ] Root WebApplicationContext: initialization completed in 607 ms
+2023-06-11 20:21:10 [ main:1165 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-11 20:21:10 [ main:1187 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-11 20:21:10 [ main:1188 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-11 20:21:10 [ main:1205 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165105 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165108 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165109 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165110 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165111 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165111 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165112 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165113 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:40:34 [ RMI TCP Accept-0:1165114 ] - [ WARN ] RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51207] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:750)
+2023-06-11 20:45:49 [ main:335 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14770 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-11 20:45:49 [ main:336 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-11 20:45:50 [ main:881 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-11 20:45:50 [ main:885 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:45:50 [ main:885 ] - [ INFO ] Starting service [Tomcat]
+2023-06-11 20:45:50 [ main:886 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-11 20:45:50 [ main:933 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-11 20:45:50 [ main:933 ] - [ INFO ] Root WebApplicationContext: initialization completed in 569 ms
+2023-06-11 20:45:50 [ main:1151 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-11 20:45:50 [ main:1179 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-11 20:45:50 [ main:1179 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-11 20:45:50 [ main:1195 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-11 20:45:53 [ main:4825 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:45:53 [ main:4839 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-11 20:45:53 [ main:4846 ] - [ INFO ] Started HnScreenApplication in 4.767 seconds (JVM running for 5.059)
+2023-06-11 20:46:00 [ main:11827 ] - [ INFO ] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-11 20:46:00 [ main:11852 ] - [ INFO ] {dataSource-0} closing ...
+2023-06-11 20:46:48 [ main:287 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14791 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-11 20:46:48 [ main:289 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-11 20:46:48 [ main:830 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-11 20:46:48 [ main:835 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:46:48 [ main:836 ] - [ INFO ] Starting service [Tomcat]
+2023-06-11 20:46:48 [ main:836 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-11 20:46:48 [ main:882 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-11 20:46:48 [ main:883 ] - [ INFO ] Root WebApplicationContext: initialization completed in 570 ms
+2023-06-11 20:46:48 [ main:1059 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-11 20:46:48 [ main:1105 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-11 20:46:48 [ main:1106 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-11 20:46:48 [ main:1113 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-11 20:46:49 [ main:1269 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:46:49 [ main:1282 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-11 20:46:49 [ main:1287 ] - [ INFO ] Started HnScreenApplication in 1.217 seconds (JVM running for 1.502)
+2023-06-11 20:46:49 [ pool-3-thread-2:1331 ] - [ INFO ] ModBus:Pro服务已启动 端口为:502
+2023-06-11 20:46:49 [ pool-3-thread-1:1331 ] - [ INFO ] ModBus:Fan服务已启动 端口为:503
+2023-06-11 20:46:49 [ nioEventLoopGroup-2-1:1334 ] - [ INFO ] ModBus客户端上线
+2023-06-11 20:46:49 [ pool-2-thread-1:1334 ] - [ INFO ] ModBus:Energy服务已连接 地址为:192.168.45.93 端口为:502
+2023-06-11 20:46:49 [ nioEventLoopGroup-2-1:1361 ] - [ INFO ] {dataSource-1} inited
+2023-06-11 20:46:49 [ nioEventLoopGroup-2-1:1657 ] - [ INFO ] 添加线圈channel:[id: 0xec4a4abf, L:/10.255.0.2:52820 - R:/192.168.45.93:502]
+2023-06-11 20:46:49 [ nioEventLoopGroup-2-1:1669 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:46:49 [ nioEventLoopGroup-2-1:1669 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:46:49 [ nioEventLoopGroup-2-1:1669 ] - [ INFO ] functionCode:4
+2023-06-11 20:46:49 [ nioEventLoopGroup-2-1:1669 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:46:54 [ nioEventLoopGroup-2-1:6673 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:46:54 [ nioEventLoopGroup-2-1:6673 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:46:54 [ nioEventLoopGroup-2-1:6673 ] - [ INFO ] functionCode:4
+2023-06-11 20:46:54 [ nioEventLoopGroup-2-1:6673 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:46:59 [ nioEventLoopGroup-2-1:11680 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:46:59 [ nioEventLoopGroup-2-1:11682 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:46:59 [ nioEventLoopGroup-2-1:11682 ] - [ INFO ] functionCode:4
+2023-06-11 20:46:59 [ nioEventLoopGroup-2-1:11682 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:47:04 [ nioEventLoopGroup-2-1:16698 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:47:04 [ nioEventLoopGroup-2-1:16698 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:47:04 [ nioEventLoopGroup-2-1:16698 ] - [ INFO ] functionCode:4
+2023-06-11 20:47:04 [ nioEventLoopGroup-2-1:16698 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:47:09 [ nioEventLoopGroup-2-1:21692 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:47:09 [ nioEventLoopGroup-2-1:21693 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:47:09 [ nioEventLoopGroup-2-1:21693 ] - [ INFO ] functionCode:4
+2023-06-11 20:47:09 [ nioEventLoopGroup-2-1:21693 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:47:14 [ nioEventLoopGroup-2-1:26692 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:47:14 [ nioEventLoopGroup-2-1:26692 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:47:14 [ nioEventLoopGroup-2-1:26692 ] - [ INFO ] functionCode:4
+2023-06-11 20:47:14 [ nioEventLoopGroup-2-1:26692 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:47:19 [ nioEventLoopGroup-2-1:31693 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:47:19 [ nioEventLoopGroup-2-1:31697 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:47:19 [ nioEventLoopGroup-2-1:31697 ] - [ INFO ] functionCode:4
+2023-06-11 20:47:19 [ nioEventLoopGroup-2-1:31697 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:47:24 [ nioEventLoopGroup-2-1:36697 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:47:24 [ nioEventLoopGroup-2-1:36697 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:47:24 [ nioEventLoopGroup-2-1:36698 ] - [ INFO ] functionCode:4
+2023-06-11 20:47:24 [ nioEventLoopGroup-2-1:36698 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:47:28 [ nioEventLoopGroup-2-1:40521 ] - [ INFO ] 监测到ModBus客户端:Energy断开连接...
+2023-06-11 20:47:28 [ nioEventLoopGroup-2-1:40526 ] - [ INFO ] ModBus客户端下线
+2023-06-11 20:47:54 [ SpringApplicationShutdownHook:66850 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-11 20:47:54 [ SpringApplicationShutdownHook:66853 ] - [ INFO ] {dataSource-1} closed
+2023-06-11 20:47:56 [ main:277 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14817 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-11 20:47:56 [ main:278 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-11 20:47:57 [ main:756 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-11 20:47:57 [ main:759 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:47:57 [ main:759 ] - [ INFO ] Starting service [Tomcat]
+2023-06-11 20:47:57 [ main:759 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-11 20:47:57 [ main:799 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-11 20:47:57 [ main:799 ] - [ INFO ] Root WebApplicationContext: initialization completed in 499 ms
+2023-06-11 20:47:57 [ main:960 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-11 20:47:57 [ main:1011 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-11 20:47:57 [ main:1012 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-11 20:47:57 [ main:1019 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-11 20:47:57 [ main:1171 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:47:57 [ main:1186 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-11 20:47:57 [ main:1192 ] - [ INFO ] Started HnScreenApplication in 1.123 seconds (JVM running for 1.393)
+2023-06-11 20:47:57 [ pool-3-thread-2:1233 ] - [ INFO ] ModBus:Pro服务已启动 端口为:502
+2023-06-11 20:47:57 [ pool-3-thread-1:1233 ] - [ INFO ] ModBus:Fan服务已启动 端口为:503
+2023-06-11 20:47:57 [ nioEventLoopGroup-2-1:1236 ] - [ INFO ] ModBus客户端上线
+2023-06-11 20:47:57 [ pool-2-thread-1:1236 ] - [ INFO ] ModBus:Energy服务已连接 地址为:192.168.45.93 端口为:502
+2023-06-11 20:47:57 [ nioEventLoopGroup-2-1:1260 ] - [ INFO ] {dataSource-1} inited
+2023-06-11 20:47:57 [ nioEventLoopGroup-2-1:1456 ] - [ INFO ] 添加线圈channel:[id: 0xc1ac99c6, L:/10.255.0.2:52949 - R:/192.168.45.93:502]
+2023-06-11 20:47:57 [ nioEventLoopGroup-2-1:1465 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:47:57 [ nioEventLoopGroup-2-1:1466 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:47:57 [ nioEventLoopGroup-2-1:1466 ] - [ INFO ] functionCode:4
+2023-06-11 20:47:57 [ nioEventLoopGroup-2-1:1466 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:48:02 [ nioEventLoopGroup-2-1:6460 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:48:02 [ nioEventLoopGroup-2-1:6460 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:48:02 [ nioEventLoopGroup-2-1:6461 ] - [ INFO ] functionCode:4
+2023-06-11 20:48:02 [ nioEventLoopGroup-2-1:6461 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:48:04 [ SpringApplicationShutdownHook:7769 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-11 20:48:04 [ SpringApplicationShutdownHook:7772 ] - [ INFO ] {dataSource-1} closed
+2023-06-11 20:49:50 [ main:300 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 14842 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-11 20:49:50 [ main:301 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-11 20:49:51 [ main:817 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-11 20:49:51 [ main:821 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:49:51 [ main:822 ] - [ INFO ] Starting service [Tomcat]
+2023-06-11 20:49:51 [ main:822 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-11 20:49:51 [ main:865 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-11 20:49:51 [ main:865 ] - [ INFO ] Root WebApplicationContext: initialization completed in 538 ms
+2023-06-11 20:49:51 [ main:1040 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-11 20:49:51 [ main:1084 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-11 20:49:51 [ main:1084 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-11 20:49:51 [ main:1091 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-11 20:49:51 [ main:1245 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-11 20:49:51 [ main:1256 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-11 20:49:51 [ main:1262 ] - [ INFO ] Started HnScreenApplication in 1.191 seconds (JVM running for 1.457)
+2023-06-11 20:49:51 [ pool-3-thread-1:1304 ] - [ INFO ] ModBus:Fan服务已启动 端口为:503
+2023-06-11 20:49:51 [ pool-3-thread-2:1304 ] - [ INFO ] ModBus:Pro服务已启动 端口为:502
+2023-06-11 20:49:51 [ nioEventLoopGroup-5-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4009) anyway as requested.
+2023-06-11 20:49:51 [ nioEventLoopGroup-10-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4007) anyway as requested.
+2023-06-11 20:49:51 [ nioEventLoopGroup-11-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4002) anyway as requested.
+2023-06-11 20:49:51 [ nioEventLoopGroup-7-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4004) anyway as requested.
+2023-06-11 20:49:51 [ nioEventLoopGroup-6-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4006) anyway as requested.
+2023-06-11 20:49:51 [ pool-4-thread-5:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4009
+2023-06-11 20:49:51 [ nioEventLoopGroup-9-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4008) anyway as requested.
+2023-06-11 20:49:51 [ nioEventLoopGroup-4-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4003) anyway as requested.
+2023-06-11 20:49:51 [ pool-4-thread-9:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4002
+2023-06-11 20:49:51 [ nioEventLoopGroup-2-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4005) anyway as requested.
+2023-06-11 20:49:51 [ pool-4-thread-1:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4007
+2023-06-11 20:49:51 [ pool-4-thread-4:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4006
+2023-06-11 20:49:51 [ pool-4-thread-6:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4003
+2023-06-11 20:49:51 [ pool-4-thread-3:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4005
+2023-06-11 20:49:51 [ nioEventLoopGroup-3-1:1306 ] - [ WARN ] A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/127.0.0.1:4001) anyway as requested.
+2023-06-11 20:49:51 [ pool-4-thread-2:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4008
+2023-06-11 20:49:51 [ pool-4-thread-7:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4004
+2023-06-11 20:49:51 [ pool-4-thread-8:1306 ] - [ INFO ] UDP服务端已经开启 当前服务IP:127.0.0.1,端口:4001
+2023-06-11 20:49:51 [ nioEventLoopGroup-12-1:1309 ] - [ INFO ] ModBus客户端上线
+2023-06-11 20:49:51 [ pool-2-thread-1:1309 ] - [ INFO ] ModBus:Energy服务已连接 地址为:192.168.45.93 端口为:502
+2023-06-11 20:49:51 [ nioEventLoopGroup-12-1:1336 ] - [ INFO ] {dataSource-1} inited
+2023-06-11 20:49:51 [ nioEventLoopGroup-12-1:1537 ] - [ INFO ] 添加线圈channel:[id: 0x8403d3f3, L:/10.255.0.2:53113 - R:/192.168.45.93:502]
+2023-06-11 20:49:51 [ nioEventLoopGroup-12-1:1546 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:49:51 [ nioEventLoopGroup-12-1:1546 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:49:51 [ nioEventLoopGroup-12-1:1546 ] - [ INFO ] functionCode:4
+2023-06-11 20:49:51 [ nioEventLoopGroup-12-1:1546 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:49:56 [ nioEventLoopGroup-12-1:6548 ] - [ INFO ] -----------TCPModbusReqEncoder encode begin------------
+2023-06-11 20:49:56 [ nioEventLoopGroup-12-1:6549 ] - [ INFO ] header:transactionId:0,protocolId:0,length:6,unitId:1
+2023-06-11 20:49:56 [ nioEventLoopGroup-12-1:6549 ] - [ INFO ] functionCode:4
+2023-06-11 20:49:56 [ nioEventLoopGroup-12-1:6549 ] - [ INFO ] TCPModbus输出编码完成...
+2023-06-11 20:49:59 [ SpringApplicationShutdownHook:9421 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-11 20:49:59 [ SpringApplicationShutdownHook:9423 ] - [ INFO ] {dataSource-1} closed
