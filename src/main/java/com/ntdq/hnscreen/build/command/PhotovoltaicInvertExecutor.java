@@ -17,7 +17,7 @@ public class PhotovoltaicInvertExecutor implements CommandGenExecutor {
     private static PointMapping pointMapping;
 
 
-    private long PhotovoltaicInvert = 1628217422741712898L;
+    private static final long PhotovoltaicInvert = 1628217422741712898L;
 
     public static void setPointMapping(PointMapping pointMapping) {
         PhotovoltaicInvertExecutor.pointMapping = pointMapping;

@@ -11,6 +11,9 @@ public class CommandExecutorFactory {
             case "Pho":
                 commandGenExecutor = new PhotovoltaicInvertExecutor();
                 break;
+            case "Fan":
+                commandGenExecutor = new FanInvertExecutor();
+                break;
         }
         return commandGenExecutor;
     }

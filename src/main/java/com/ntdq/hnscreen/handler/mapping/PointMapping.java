@@ -2,6 +2,7 @@ package com.ntdq.hnscreen.handler.mapping;
 
 import cn.hutool.core.util.ByteUtil;
 import com.ntdq.hnscreen.build.command.EnergyExecutor;
+import com.ntdq.hnscreen.build.command.FanInvertExecutor;
 import com.ntdq.hnscreen.build.command.PhotovoltaicInvertExecutor;
 import com.ntdq.hnscreen.domain.attribute.TemplateAttribute;
 import com.ntdq.hnscreen.mapper.AttributeMapper;
@@ -25,7 +26,6 @@ public class PointMapping implements InitializingBean {
 
     private AttributeMapper attributeMapper;
 
-    private List<TemplateAttribute> templateAttributes = new LinkedList<>();
 
     private RedisClient redisClient;
 
@@ -37,10 +37,6 @@ public class PointMapping implements InitializingBean {
     @Autowired
     public void setAttributeMapper(AttributeMapper attributeMapper) {
         this.attributeMapper = attributeMapper;
-    }
-
-    public void setTemplateAttributes(List<TemplateAttribute> templateAttributes) {
-        this.templateAttributes = templateAttributes;
     }
 
     /**
@@ -107,6 +103,7 @@ public class PointMapping implements InitializingBean {
     public void afterPropertiesSet() throws Exception {
         EnergyExecutor.setPointMapping(this);
         PhotovoltaicInvertExecutor.setPointMapping(this);
+        FanInvertExecutor.setPointMapping(this);
 //        List<TemplateAttribute> allAttributeInfoByTemplateId = attributeMapper.findAllAttributeInfoByTemplateId(templateIdOnEnergy);
 //        System.out.println(allAttributeInfoByTemplateId);
 //        allAttributeInfoByTemplateId = allAttributeInfoByTemplateId.stream().sorted(Comparator.comparingLong(TemplateAttribute::getAtrbMessageAddress)).collect(Collectors.toList());

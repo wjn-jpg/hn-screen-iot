@@ -148,7 +148,7 @@ public class ModBusMessageGenerate {
     public static com.ntdq.hnscreen.modbus.domain.ModBusHeader newReadInputRegistersReqHeader(int transactionId){
         com.ntdq.hnscreen.modbus.domain.ModBusHeader modBusHeader = new ModBusHeader();
         modBusHeader.setProtocolId(PROTOCOLID);
-        modBusHeader.setUnitId((byte) 1);
+        modBusHeader.setUnitId((byte) 0);
         modBusHeader.setTransactionId((short) transactionId);
         modBusHeader.setLength((short) 6);
         return modBusHeader;

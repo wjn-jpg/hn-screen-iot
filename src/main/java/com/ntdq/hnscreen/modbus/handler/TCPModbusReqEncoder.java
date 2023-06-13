@@ -49,31 +49,29 @@ public class TCPModbusReqEncoder extends MessageToByteEncoder<ModBusMessage> {
             //header
             ModBusHeaderEncoder.encode(byteBuf, modBusTcpMessage.getModBusHeader());
             logger.info("header:" + modBusTcpMessage.getModBusHeader().toString());
-
             //functionCode
             int functionCode = modBusTcpMessage.getModBusPayload().getFunctionCode();
             logger.info("functionCode:" + functionCode);
-
             byteBuf.writeByte(modBusTcpMessage.getModBusPayload().getFunctionCode());
             byteBuf.writeBytes(modBusTcpMessage.getModBusPayload().getData());
         } else if (modBusMessage instanceof ModBusRtuSendMessage) {
-//            ModBusRtuSendMessage modBusRtuSendMessage = (ModBusRtuSendMessage) modBusMessage;
-//            byteBuf.writeByte(modBusRtuSendMessage.getModBusHeader().getDeviceAddress());
-//            byteBuf.writeByte(modBusRtuSendMessage.getModBusHeader().getFunctionCode());
-//            byteBuf.writeBytes(modBusRtuSendMessage.getModBusPayLoad().getData());
-//            byteBuf.writeBytes(modBusRtuSendMessage.getModBusRtuCrcCheck().getCrcCheckData());
-            byte[] data = new byte[6];
-            data[0] = 0x01;
-            data[1] = 0x04;
-            data[2] = 0x0A;
-            data[3] = 0x00;
-            data[4] = 0x00;
-            data[5] = 0x01;
-            byte[] bytes = ModBusRtuMessageGenerate.CRC16(data);
-            byte[] send = new byte[8];
-            System.arraycopy(data, 0, send, 0, 6);
-            System.arraycopy(bytes, 0, send, 6, 2);
-            byteBuf.writeBytes(send);
+            ModBusRtuSendMessage modBusRtuSendMessage = (ModBusRtuSendMessage) modBusMessage;
+            byteBuf.writeByte(modBusRtuSendMessage.getModBusHeader().getDeviceAddress());
+            byteBuf.writeByte(modBusRtuSendMessage.getModBusHeader().getFunctionCode());
+            byteBuf.writeBytes(modBusRtuSendMessage.getModBusPayLoad().getData());
+            byteBuf.writeBytes(modBusRtuSendMessage.getModBusRtuCrcCheck().getCrcCheckData());
+//            byte[] data = new byte[6];
+//            data[0] = 0x01;
+//            data[1] = 0x04;
+//            data[2] = 0x0A;
+//            data[3] = 0x00;
+//            data[4] = 0x00;
+//            data[5] = 0x01;
+//            byte[] bytes = ModBusRtuMessageGenerate.CRC16(data);
+//            byte[] send = new byte[8];
+//            System.arraycopy(data, 0, send, 0, 6);
+//            System.arraycopy(bytes, 0, send, 6, 2);
+//            byteBuf.writeBytes(send);
         }
 //        byte[] bytes = new byte[byteBuf.readableBytes()];
 //        byteBuf.readBytes(bytes);

@@ -67,7 +67,7 @@ public class TCPModbusResHandler extends SimpleChannelInboundHandler<TCPModbusBy
                 pointAttributeParseList.forEach(pointAttributeParse -> {
                     int transactionIdAndIncrement = transactionId.getAndIncrement();
                     pointAttributeParse.setTransactionId(transactionIdAndIncrement);
-                    transactionPointAttributeParseMap.put(transactionIdAndIncrement, pointAttributeParse);
+                    transactionPointAttributeParseMap.put(transactionIdAndIncrement + 1, pointAttributeParse);
                 });
                 SyncExecutor.startCollect(serviceName, channel, commandGenExecutor, pointAttributeParseList, SocketStyle.TCP);
                 break;

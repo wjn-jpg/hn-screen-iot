@@ -1,10 +1,12 @@
-package com.ntdq.hnscreen.domain.point;
+package com.ntdq.hnscreen.domain.point.FanInvert;
 
+import com.ntdq.hnscreen.annotation.AttributeInfo;
 import com.ntdq.hnscreen.annotation.ModelArguments;
 
 /**
  * 历史发电量信息
  */
+@AttributeInfo(startIndex = 4864, endIndex = 4924, type = 0)
 public class HistoricalElectricityGenerate {
 
 

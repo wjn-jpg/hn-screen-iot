@@ -1,10 +1,14 @@
-package com.ntdq.hnscreen.domain.point;
+package com.ntdq.hnscreen.domain.point.FanInvert;
 
+import com.ntdq.hnscreen.annotation.AttributeInfo;
 import com.ntdq.hnscreen.annotation.ModelArguments;
+import com.ntdq.hnscreen.annotation.Topic;
 
 /**
  * 实时运行信息
  */
+@AttributeInfo(startIndex = 4096, endIndex = 4143, type = 0)
+@Topic(topicName = "FAN_REAL_YC")
 public class RealTimeOperationInfo {
 
 
