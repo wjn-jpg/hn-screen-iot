@@ -19,7 +19,7 @@ public class EnergyExecutor implements CommandGenExecutor {
     private static PointMapping pointMapping;
 
 
-    private long templateEnergy = 1628202088903159810L;
+    private static final long templateEnergy = 1628209117201903617L;
 
     public static void setPointMapping(PointMapping pointMapping) {
         EnergyExecutor.pointMapping = pointMapping;
@@ -53,8 +53,8 @@ public class EnergyExecutor implements CommandGenExecutor {
         pointAttributeParse.setBoClass(EnergyStorageInverter.class);
         pointAttributeParses.add(pointAttributeParse);
 
-        pointAttributeParses.forEach(pointAttributeParseItem->{
-            fillPointParse(pointAttributeParseItem,templateAttributesByIndex);
+        pointAttributeParses.forEach(pointAttributeParseItem -> {
+            fillPointParse(pointAttributeParseItem, templateAttributesByIndex);
         });
 
         return pointAttributeParses;

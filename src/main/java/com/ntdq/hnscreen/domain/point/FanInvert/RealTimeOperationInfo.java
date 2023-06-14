@@ -3,13 +3,14 @@ package com.ntdq.hnscreen.domain.point.FanInvert;
 import com.ntdq.hnscreen.annotation.AttributeInfo;
 import com.ntdq.hnscreen.annotation.ModelArguments;
 import com.ntdq.hnscreen.annotation.Topic;
+import com.ntdq.hnscreen.domain.point.BasePointInfo;
 
 /**
  * 实时运行信息
  */
-@AttributeInfo(startIndex = 4096, endIndex = 4143, type = 0)
+@AttributeInfo(startIndex = 4096, endIndex = 4143, funcType = 4)
 @Topic(topicName = "FAN_REAL_YC")
-public class RealTimeOperationInfo {
+public class RealTimeOperationInfo extends BasePointInfo {
 
 
     /**
@@ -147,7 +148,7 @@ public class RealTimeOperationInfo {
     /**
      * 总发电量
      */
-    @ModelArguments(code = "TotalPowerGeneration", mean = "总发电量", number = 4119,length = 4)
+    @ModelArguments(code = "TotalPowerGeneration", mean = "总发电量", number = 4119, length = 4)
     private float TotalPowerGeneration;
 
     /**
@@ -171,7 +172,7 @@ public class RealTimeOperationInfo {
     /**
      * 系统时间
      */
-    @ModelArguments(code = "SystemTime", mean = "系统时间", number = 4123,length = 4)
+    @ModelArguments(code = "SystemTime", mean = "系统时间", number = 4123, length = 4)
     private float SystemTime;
 
     /**

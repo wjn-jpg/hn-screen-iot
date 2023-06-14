@@ -2,12 +2,13 @@ package com.ntdq.hnscreen.domain.point.FanInvert;
 
 import com.ntdq.hnscreen.annotation.AttributeInfo;
 import com.ntdq.hnscreen.annotation.ModelArguments;
+import com.ntdq.hnscreen.domain.point.BasePointInfo;
 
 /**
  * 历史发电量信息
  */
-@AttributeInfo(startIndex = 4864, endIndex = 4924, type = 0)
-public class HistoricalElectricityGenerate {
+@AttributeInfo(startIndex = 4864, endIndex = 4924, funcType = 4)
+public class HistoricalElectricityGenerate extends BasePointInfo {
 
 
     /**

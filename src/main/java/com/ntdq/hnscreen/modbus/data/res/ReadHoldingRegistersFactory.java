@@ -1,6 +1,7 @@
 package com.ntdq.hnscreen.modbus.data.res;
 
 import com.ntdq.hnscreen.build.command.PointAttributeParse;
+import com.ntdq.hnscreen.modbus.data.MappingAttributeMessage;
 import com.ntdq.hnscreen.modbus.data.RecAndWriMessage;
 import com.ntdq.hnscreen.modbus.domain.ModBusHeader;
 import com.ntdq.hnscreen.modbus.domain.ModBusPayload;
@@ -11,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
-public class ReadHoldingRegistersFactory implements RecAndWriMessage {
+public class ReadHoldingRegistersFactory extends MappingAttributeMessage {
 
     private static final Logger logger = LoggerFactory.getLogger(ReadCoilsResMessageFactory.class);
     @Override

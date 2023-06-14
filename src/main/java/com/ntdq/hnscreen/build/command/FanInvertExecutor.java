@@ -5,8 +5,10 @@ import com.ntdq.hnscreen.domain.point.FanInvert.HistoricalElectricityGenerate;
 import com.ntdq.hnscreen.domain.point.FanInvert.RealTimeOperationInfo;
 import com.ntdq.hnscreen.handler.mapping.PointMapping;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FanInvertExecutor implements CommandGenExecutor {
 

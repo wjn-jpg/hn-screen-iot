@@ -12,6 +12,7 @@ import com.ntdq.hnscreen.modbus.domain.ModBusMessageGenerate;
 import com.ntdq.hnscreen.modbus.domain.ModBusPayload;
 import com.ntdq.hnscreen.modbus.domain.ModBusTcpMessage;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -22,8 +23,8 @@ import java.util.stream.Collectors;
 public interface CommandGenExecutor {
 
     /**
-     * @param  服务名称
-     * @param         事务号
+     * @param
+     * @param
      * @return
      */
     default List<ModBusRtuSendMessage> buildCommandRtu(List<PointAttributeParse> pointAttributeParseList) {
@@ -71,11 +72,13 @@ public interface CommandGenExecutor {
 
     default PointAttributeParse fillPointParse(PointAttributeParse pointAttributeParse, List<TemplateAttribute> templateAttributesByIndex) {
         AttributeInfo attributeInfo = pointAttributeParse.getBoClass().getAnnotation(AttributeInfo.class);
-        List<TemplateAttribute> engryList = templateAttributesByIndex.stream().filter(templateAttribute ->
-                templateAttribute.getAtrbMessageAddress() >= attributeInfo.startIndex()
-                        && templateAttribute.getAtrbMessageAddress() <= attributeInfo.endIndex()).collect(Collectors.toList());
-        pointAttributeParse.setTemplateAttributes(engryList);
-        pointAttributeParse.setType(attributeInfo.type());
+        List<TemplateAttribute> attributesList = templateAttributesByIndex.stream().filter(templateAttribute ->
+                        templateAttribute.getAtrbMessageAddress() >= attributeInfo.startIndex()
+                                && templateAttribute.getAtrbMessageAddress() <= attributeInfo.endIndex())
+                .sorted(Comparator.comparing(TemplateAttribute::getAtrbMessageAddress))
+                .collect(Collectors.toList());
+        pointAttributeParse.setTemplateAttributes(attributesList);
+        pointAttributeParse.setType(attributeInfo.funcType());
         return pointAttributeParse;
     }
 

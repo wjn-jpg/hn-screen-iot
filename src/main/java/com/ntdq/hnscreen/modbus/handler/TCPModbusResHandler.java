@@ -66,13 +66,23 @@ public class TCPModbusResHandler extends SimpleChannelInboundHandler<TCPModbusBy
             case "TCP":
                 pointAttributeParseList.forEach(pointAttributeParse -> {
                     int transactionIdAndIncrement = transactionId.getAndIncrement();
-                    pointAttributeParse.setTransactionId(transactionIdAndIncrement);
-                    transactionPointAttributeParseMap.put(transactionIdAndIncrement + 1, pointAttributeParse);
+                    if (serviceName.equals("Fan")) {
+                        pointAttributeParse.setTransactionId(transactionIdAndIncrement++);
+                        //风机是事务标识返回结果会+1
+                        transactionPointAttributeParseMap.put(transactionIdAndIncrement, pointAttributeParse);
+                    } else {
+                        while (transactionPointAttributeParseMap.get(transactionIdAndIncrement) != null) {
+                            transactionIdAndIncrement = transactionId.incrementAndGet();
+                        }
+                        pointAttributeParse.setTransactionId(transactionIdAndIncrement);
+                        transactionPointAttributeParseMap.put(transactionIdAndIncrement, pointAttributeParse);
+                    }
                 });
                 SyncExecutor.startCollect(serviceName, channel, commandGenExecutor, pointAttributeParseList, SocketStyle.TCP);
                 break;
             case "RTU":
                 SyncExecutor.startCollect(serviceName, channel, commandGenExecutor, pointAttributeParseList, SocketStyle.SERIAL);
+                break;
         }
         logger.info("添加线圈channel:{}", channel);
     }

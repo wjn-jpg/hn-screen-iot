@@ -12,11 +12,6 @@ public @interface AttributeInfo {
 
     int endIndex() default 0;
 
-    /**
-     * yc or yx
-     * 0  or  1
-     * @return
-     */
-    int type() default 0;
 
+    int funcType() default 0;
 }

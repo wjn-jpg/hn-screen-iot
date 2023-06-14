@@ -46,7 +46,7 @@ public class PointAttributeController {
             templateAttribute.setAtrbName(modelArguments.mean());
             templateAttribute.setAtrbMessageAddress(modelArguments.number());
             templateAttribute.setAtrbCoefficient(modelArguments.coefficient());
-            templateAttribute.setAtrbType(attributeInfo.type());
+            templateAttribute.setAtrbType(attributeInfo.funcType());
             templateAttributeList.add(templateAttribute);
         }
         boolean saveSuccess = attributeMapper.saveBatchAttribute(templateAttributeList);

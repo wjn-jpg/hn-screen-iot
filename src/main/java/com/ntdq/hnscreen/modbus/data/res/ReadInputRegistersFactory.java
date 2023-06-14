@@ -5,6 +5,7 @@ import com.ntdq.hnscreen.annotation.Topic;
 import com.ntdq.hnscreen.build.command.PointAttributeParse;
 import com.ntdq.hnscreen.domain.point.BasePointInfo;
 import com.ntdq.hnscreen.handler.mapping.PointMapping;
+import com.ntdq.hnscreen.modbus.data.MappingAttributeMessage;
 import com.ntdq.hnscreen.modbus.data.RecAndWriMessage;
 import com.ntdq.hnscreen.modbus.domain.ModBusHeader;
 import com.ntdq.hnscreen.modbus.domain.ModBusPayload;
@@ -17,7 +18,7 @@ import java.lang.annotation.Target;
 import java.util.Map;
 
 
-public class ReadInputRegistersFactory implements RecAndWriMessage {
+public class ReadInputRegistersFactory extends MappingAttributeMessage {
 
     private static final Logger logger = LoggerFactory.getLogger(ReadInputRegistersFactory.class);
 

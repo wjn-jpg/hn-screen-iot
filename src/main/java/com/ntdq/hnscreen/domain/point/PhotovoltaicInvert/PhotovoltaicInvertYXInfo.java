@@ -7,7 +7,7 @@ import com.ntdq.hnscreen.domain.point.BasePointInfo;
 /**
  * 光伏逆变器遥信信息
  */
-@AttributeInfo(startIndex = 2501, endIndex = 2544, type = 1)
+@AttributeInfo(startIndex = 2501, endIndex = 2544, funcType = 2)
 public class PhotovoltaicInvertYXInfo extends BasePointInfo {
 
     /**

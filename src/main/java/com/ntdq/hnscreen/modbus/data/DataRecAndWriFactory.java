@@ -13,12 +13,11 @@ public class DataRecAndWriFactory {
             case ModBusFunctionCode.ReadCoils:
                 recAndWriMessage = new ReadCoilsResMessageFactory();
                 break;
+//            case ModBusFunctionCode.ReadHoldingRegisters:
+//                recAndWriMessage = new ReadHoldingRegistersFactory();
+//                break;
             case ModBusFunctionCode.ReadHoldingRegisters:
-                recAndWriMessage = new ReadHoldingRegistersFactory();
-                break;
             case ModBusFunctionCode.ReadInputRegisters:
-                recAndWriMessage = new ReadInputRegistersFactory();
-                break;
             case ModBusFunctionCode.ReadDiscreteInputs:
                 recAndWriMessage = new ReadInputRegistersFactory();
                 break;

@@ -4,6 +4,8 @@ package com.ntdq.hnscreen.modbus.domain;
 import com.ntdq.hnscreen.modbus.constant.ModBusFunctionCode;
 import com.ntdq.hnscreen.util.ByteUtil;
 
+import java.util.Arrays;
+
 public class ModBusMessageGenerate {
 
     /**
@@ -70,12 +72,15 @@ public class ModBusMessageGenerate {
 
     public static com.ntdq.hnscreen.modbus.domain.ModBusPayload newReadHoldingRegistersReqPayLoad(int address, int quantity, int type) {
         com.ntdq.hnscreen.modbus.domain.ModBusPayload modBusPayload = new com.ntdq.hnscreen.modbus.domain.ModBusPayload();
-        switch (type){
-            case 0:
-                modBusPayload.setFunctionCode(ModBusFunctionCode.ReadInputRegisters);
-                break;
-            case 1:
+        switch (type) {
+            case 2:
                 modBusPayload.setFunctionCode(ModBusFunctionCode.ReadDiscreteInputs);
+                break;
+            case 3:
+                modBusPayload.setFunctionCode(ModBusFunctionCode.ReadHoldingRegisters);
+                break;
+            case 4:
+                modBusPayload.setFunctionCode(ModBusFunctionCode.ReadInputRegisters);
                 break;
         }
         byte[] bytes = new byte[4];
@@ -129,8 +134,8 @@ public class ModBusMessageGenerate {
 //        bb[1] = f;
 //        System.out.println(bb);
 
-        byte[] bytes = ByteUtil.intToBytesBig(65280);
-        System.out.println(bytes);
+        byte[] bytes = ByteUtil.intToBytesBig(3000);
+        System.out.println(Arrays.toString(bytes));
     }
 
     public static com.ntdq.hnscreen.modbus.domain.ModBusHeader newReadInputRegistersReqHeader() {
@@ -145,10 +150,10 @@ public class ModBusMessageGenerate {
         return modBusHeader;
     }
 
-    public static com.ntdq.hnscreen.modbus.domain.ModBusHeader newReadInputRegistersReqHeader(int transactionId){
+    public static com.ntdq.hnscreen.modbus.domain.ModBusHeader newReadInputRegistersReqHeader(int transactionId) {
         com.ntdq.hnscreen.modbus.domain.ModBusHeader modBusHeader = new ModBusHeader();
         modBusHeader.setProtocolId(PROTOCOLID);
-        modBusHeader.setUnitId((byte) 0);
+        modBusHeader.setUnitId((byte) 1);
         modBusHeader.setTransactionId((short) transactionId);
         modBusHeader.setLength((short) 6);
         return modBusHeader;

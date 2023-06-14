@@ -52,7 +52,7 @@ public class ModBusTcpClientStartServerImpl implements InitializingBean, ModBusS
                     Bootstrap bootstrap = new Bootstrap();
                     bootstrap.group(bossGroup).channel(NioSocketChannel.class)
                             .option(ChannelOption.SO_KEEPALIVE, true)
-                            .handler(new TcpModBusClientHandlerInitializer(modBusTcpClientConfig.getKey(),modBusTcpClientConfig.getValue().getStyle()));
+                            .handler(new TcpModBusClientHandlerInitializer(modBusTcpClientConfig.getKey(), modBusTcpClientConfig.getValue().getStyle()));
                     ChannelFuture connect = null;
                     try {
                         //sync方法等待connect建立连接完毕 不然会异步
@@ -62,7 +62,7 @@ public class ModBusTcpClientStartServerImpl implements InitializingBean, ModBusS
                         logger.info("ModBus客户端连接失败...");
                     }
                     if (connect == null) {
-                        logger.info("ModBus客户端:{}连接失败...",modBusTcpClientConfig.getKey());
+                        logger.info("ModBus客户端:{}连接失败...", modBusTcpClientConfig.getKey());
                         return;
                     }
                     connect.addListener(new ChannelFutureListener() {
@@ -90,6 +90,8 @@ public class ModBusTcpClientStartServerImpl implements InitializingBean, ModBusS
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        pool = new ThreadPoolExecutor(modBusConfig.getServiceNameModBusTcpClientMap().size(), modBusConfig.getServiceNameModBusTcpClientMap().size() * 2, 1, TimeUnit.HOURS, new LinkedBlockingDeque<>());
+        if (modBusConfig.getServiceNameModBusTcpClientMap() != null && modBusConfig.getServiceNameModBusTcpClientMap().size() > 0) {
+            pool = new ThreadPoolExecutor(modBusConfig.getServiceNameModBusTcpClientMap().size(), modBusConfig.getServiceNameModBusTcpClientMap().size() * 2, 1, TimeUnit.HOURS, new LinkedBlockingDeque<>());
+        }
     }
 }

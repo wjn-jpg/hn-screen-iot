@@ -7,7 +7,7 @@ import com.ntdq.hnscreen.domain.point.BasePointInfo;
 /**
  * 储能逆变器
  */
-@AttributeInfo(startIndex = 18189, endIndex = 18417, type = 0)
+@AttributeInfo(startIndex = 18189, endIndex = 18417, funcType = 3)
 public class EnergyStorageInverter extends BasePointInfo {
 
 
@@ -16,6 +16,7 @@ public class EnergyStorageInverter extends BasePointInfo {
      */
     @ModelArguments(code = "OutputVoltage", mean = "输出电压", number = 18189)
     private short OutputVoltage;
+
 
     @ModelArguments(code = "ProtectionAction", mean = "保护动作", number = 18190)
     private short ProtectionAction;
