@@ -2,12 +2,14 @@ package com.ntdq.hnscreen.domain.point.FanInvert;
 
 import com.ntdq.hnscreen.annotation.AttributeInfo;
 import com.ntdq.hnscreen.annotation.ModelArguments;
+import com.ntdq.hnscreen.annotation.Topic;
 import com.ntdq.hnscreen.domain.point.BasePointInfo;
 
 /**
  * 历史发电量信息
  */
 @AttributeInfo(startIndex = 4864, endIndex = 4924, funcType = 4)
+@Topic(topicName = "FAN_HISTORY_YC")
 public class HistoricalElectricityGenerate extends BasePointInfo {
 
 
@@ -327,45 +329,74 @@ public class HistoricalElectricityGenerate extends BasePointInfo {
     /**
      * 昨53天发电量
      */
-    @ModelArguments(code = "ElectricityGenLastDay53", mean = "昨53天发电量", number = 4917)
+    @ModelArguments(code = "ElectricityGenLastDay53", mean = "昨54天发电量", number = 4917)
     private short ElectricityGenLastDay53;
 
     /**
      * 昨54天发电量
      */
-    @ModelArguments(code = "ElectricityGenLastDay54", mean = "昨54天发电量", number = 4919)
+    @ModelArguments(code = "ElectricityGenLastDay54", mean = "昨54天发电量", number = 4918)
     private short ElectricityGenLastDay54;
 
     /**
      * 昨55天发电量
      */
-    @ModelArguments(code = "ElectricityGenLastDay55", mean = "昨55天发电量", number = 4920)
+    @ModelArguments(code = "ElectricityGenLastDay55", mean = "昨55天发电量", number = 4919)
     private short ElectricityGenLastDay55;
 
     /**
      * 昨56天发电量
      */
-    @ModelArguments(code = "ElectricityGenLastDay56", mean = "昨56天发电量", number = 4921)
+    @ModelArguments(code = "ElectricityGenLastDay56", mean = "昨56天发电量", number = 4920)
     private short ElectricityGenLastDay56;
 
     /**
      * 昨57天发电量
      */
-    @ModelArguments(code = "ElectricityGenLastDay57", mean = "昨57天发电量", number = 4922)
+    @ModelArguments(code = "ElectricityGenLastDay57", mean = "昨57天发电量", number = 4921)
     private short ElectricityGenLastDay57;
 
     /**
      * 昨58天发电量
      */
-    @ModelArguments(code = "ElectricityGenLastDay58", mean = "昨58天发电量", number = 4923)
+    @ModelArguments(code = "ElectricityGenLastDay58", mean = "昨58天发电量", number = 4922)
     private short ElectricityGenLastDay58;
 
     /**
      * 昨59天发电量
      */
-    @ModelArguments(code = "ElectricityGenLastDay59", mean = "昨59天发电量", number = 4924)
-    private short ElectricityGenLastDay59;
+    @ModelArguments(code = "ElectricityGenLastDay59", mean = "昨59天发电量", number = 4923)
+    private short ElectricityGenLastDay59;//1628202088903159810
 
+
+    /**
+     * 总发电量
+     */
+    @ModelArguments(code = "ElectricityGenALL", mean = "总发电量", number = 4924,length = 4)
+    private float ElectricityGenALL;
+
+    /**
+     * 总发电量
+     */
+    @ModelArguments(code = "ElectricityXHALL", mean = "总泄荷电量", number = 4926,length = 4)
+    private float ElectricityXHALL;
+
+
+    public float getElectricityGenALL() {
+        return ElectricityGenALL;
+    }
+
+    public void setElectricityGenALL(float electricityGenALL) {
+        ElectricityGenALL = electricityGenALL;
+    }
+
+    public float getElectricityXHALL() {
+        return ElectricityXHALL;
+    }
+
+    public void setElectricityXHALL(float electricityXHALL) {
+        ElectricityXHALL = electricityXHALL;
+    }
 
     public short getElectricityGenToday() {
         return ElectricityGenToday;
@@ -846,4 +877,6 @@ public class HistoricalElectricityGenerate extends BasePointInfo {
     public void setElectricityGenLastDay59(short electricityGenLastDay59) {
         ElectricityGenLastDay59 = electricityGenLastDay59;
     }
+
+
 }

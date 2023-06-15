@@ -234,3 +234,5 @@ Caused by: java.lang.NumberFormatException: For input string: "192.168.1.5"
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
 	... 16 common frames omitted
+2023-06-14 19:24:31 [ MQTT Ping: NT500_admin:130379 ] - [ ERROR ] NT500_admin: Timed out as no write activity, keepAlive=60,000,000,000 lastOutboundActivity=16,084,968,124,100 lastInboundActivity=16,084,974,361,100 time=16,209,726,605,700 lastPing=0
+2023-06-14 22:13:47 [ MQTT Ping: NT500_admin:10151614 ] - [ ERROR ] NT500_admin: Timed out as no write activity, keepAlive=60,000,000,000 lastOutboundActivity=16,220,263,267,700 lastInboundActivity=16,220,271,775,100 time=26,365,301,613,800 lastPing=0

@@ -54,7 +54,7 @@ public class MqttConsumer {
         options.setConnectionTimeout(PropertiesUtil.MQTT_TIMEOUT);
         // 设置会话心跳时间
         options.setKeepAliveInterval(PropertiesUtil.MQTT_KEEP_ALIVE);
-        options.setMaxInflight(1000);
+        options.setMaxInflight(10000);
         // 是否清除session
         options.setCleanSession(false);
         return options;

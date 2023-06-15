@@ -45,6 +45,9 @@ public class TCPModbusReqEncoder extends MessageToByteEncoder<ModBusMessage> {
     protected void encode(ChannelHandlerContext channelHandlerContext, ModBusMessage modBusMessage, ByteBuf byteBuf) throws Exception {
         if (modBusMessage instanceof ModBusTcpMessage) {
             ModBusTcpMessage modBusTcpMessage = (ModBusTcpMessage) modBusMessage;
+//            if (((ModBusTcpMessage) modBusMessage).getModBusHeader().getTransactionId() == 1) {
+//                return;
+//            }
             logger.info("-----------TCPModbusReqEncoder encode begin------------");
             //header
             ModBusHeaderEncoder.encode(byteBuf, modBusTcpMessage.getModBusHeader());
@@ -53,7 +56,21 @@ public class TCPModbusReqEncoder extends MessageToByteEncoder<ModBusMessage> {
             int functionCode = modBusTcpMessage.getModBusPayload().getFunctionCode();
             logger.info("functionCode:" + functionCode);
             byteBuf.writeByte(modBusTcpMessage.getModBusPayload().getFunctionCode());
-            byteBuf.writeBytes(modBusTcpMessage.getModBusPayload().getData());
+            byte[] result = modBusTcpMessage.getModBusPayload().getData();
+            //byteBuf.writeBytes(result);
+
+            //===================
+            byte[] data = new byte[]{0x47, 0x0D, 0x00, 0x64};
+//            byte[] add = new byte[2];
+//            add[0] = data[0];
+//            add[1] = data[1];
+//            byteBuf.writeBytes(add);
+//            byte[] q = new byte[]{0x00, 0x40};
+//            byteBuf.writeBytes(q);
+            //byteBuf.writeBytes(modBusTcpMessage.getModBusPayload().getData());
+//
+//            byte[] data = new byte[]{0x00, 0x00, 0x00, 0x00, 0x00, 0x06, 0x01, 0x04, 0x13, 0x00, 0x00, 0x32};
+            byteBuf.writeBytes(data);
         } else if (modBusMessage instanceof ModBusRtuSendMessage) {
             ModBusRtuSendMessage modBusRtuSendMessage = (ModBusRtuSendMessage) modBusMessage;
             byteBuf.writeByte(modBusRtuSendMessage.getModBusHeader().getDeviceAddress());

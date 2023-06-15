@@ -5,19 +5,6 @@
     <!--        <result property="fieldName" column="mp_code"/>-->
     <!--        <result property="address" column="mp_address"/>-->
     <!--    </resultMap>-->
-
-<!--    <select id="getAllConfigByYC" resultMap="config">-->
-<!--        select mp_code, mp_address-->
-<!--        from t_yc_point-->
-<!--        where dev_main_type = #{devMainType}-->
-<!--    </select>-->
-
-<!--    <select id="getAllConfigByYX" resultMap="config">-->
-<!--        select mp_code, mp_address-->
-<!--        from t_yx_point-->
-<!--        where dev_main_type = #{devMainType}-->
-<!--    </select>-->
-
     <select id="getTemplateIdByName" resultType="java.lang.Long">
         select id
         from t_template_type

@@ -161,13 +161,13 @@ public class RealTimeOperationInfo extends BasePointInfo {
      * LED状态
      */
     @ModelArguments(code = "LEDStatus", mean = "LED状态", number = 4122, length = 1)
-    private float LEDStatus;
+    private byte LEDStatus;
 
     /**
      * 光伏状态
      */
     @ModelArguments(code = "PhotovoltaicStatus", mean = "光伏状态", number = 4122, length = 1)
-    private float PhotovoltaicStatus;
+    private byte PhotovoltaicStatus;
 
     /**
      * 系统时间
@@ -179,13 +179,13 @@ public class RealTimeOperationInfo extends BasePointInfo {
      * 输出/泄荷状态
      */
     @ModelArguments(code = "OutputOrDischargeStatus", mean = "输出/泄荷状态", number = 4125, length = 1)
-    private float OutputOrDischargeStatus;
+    private byte OutputOrDischargeStatus;
 
     /**
      * 光伏状态预留
      */
     @ModelArguments(code = "PhotovoltaicReverseStatus", mean = "光伏状态预留", number = 4125, length = 1)
-    private float PhotovoltaicReverseStatus;
+    private byte PhotovoltaicReverseStatus;
 
     /**
      * 连续运行时
@@ -197,13 +197,13 @@ public class RealTimeOperationInfo extends BasePointInfo {
      * 连续运行分
      */
     @ModelArguments(code = "ContinuousRunningMinute", mean = "连续运行分", number = 4127, length = 1)
-    private float ContinuousRunningMinute;
+    private byte ContinuousRunningMinute;
 
     /**
      * 连续运行秒
      */
     @ModelArguments(code = "ContinuousRunningSecond", mean = "连续运行秒", number = 4127, length = 1)
-    private float ContinuousRunningSecond;
+    private byte ContinuousRunningSecond;
 
     /**
      * 平均转速
@@ -227,13 +227,13 @@ public class RealTimeOperationInfo extends BasePointInfo {
      * 节点状态
      */
     @ModelArguments(code = "nodeStatus", mean = "节点状态", number = 4131, length = 1)
-    private float nodeStatus;
+    private byte nodeStatus;
 
     /**
      * 下位机状态
      */
-    @ModelArguments(code = "nodeStatus", mean = "下位机状态", number = 4131, length = 1)
-    private float LowerComputerStatus;
+    @ModelArguments(code = "LowerComputerStatus", mean = "下位机状态", number = 4131, length = 1)
+    private byte LowComputeStatus;
 
     /**
      * U 相电流
@@ -264,13 +264,13 @@ public class RealTimeOperationInfo extends BasePointInfo {
      * 系统状态
      */
     @ModelArguments(code = "SystemStatus", mean = "系统状态", number = 4136, length = 1)
-    private float SystemStatus;
+    private byte SystemStatus;
 
     /**
      * CPU状态☆
      */
     @ModelArguments(code = "CpuStatus", mean = "CPU状态", number = 4136, length = 1)
-    private float CpuStatus;
+    private byte CpuStatus;
 
     /**
      * 侧偏角度
@@ -507,19 +507,19 @@ public class RealTimeOperationInfo extends BasePointInfo {
         OutputAverage = outputAverage;
     }
 
-    public float getLEDStatus() {
+    public byte getLEDStatus() {
         return LEDStatus;
     }
 
-    public void setLEDStatus(float LEDStatus) {
+    public void setLEDStatus(byte LEDStatus) {
         this.LEDStatus = LEDStatus;
     }
 
-    public float getPhotovoltaicStatus() {
+    public byte getPhotovoltaicStatus() {
         return PhotovoltaicStatus;
     }
 
-    public void setPhotovoltaicStatus(float photovoltaicStatus) {
+    public void setPhotovoltaicStatus(byte photovoltaicStatus) {
         PhotovoltaicStatus = photovoltaicStatus;
     }
 
@@ -531,19 +531,19 @@ public class RealTimeOperationInfo extends BasePointInfo {
         SystemTime = systemTime;
     }
 
-    public float getOutputOrDischargeStatus() {
+    public byte getOutputOrDischargeStatus() {
         return OutputOrDischargeStatus;
     }
 
-    public void setOutputOrDischargeStatus(float outputOrDischargeStatus) {
+    public void setOutputOrDischargeStatus(byte outputOrDischargeStatus) {
         OutputOrDischargeStatus = outputOrDischargeStatus;
     }
 
-    public float getPhotovoltaicReverseStatus() {
+    public byte getPhotovoltaicReverseStatus() {
         return PhotovoltaicReverseStatus;
     }
 
-    public void setPhotovoltaicReverseStatus(float photovoltaicReverseStatus) {
+    public void setPhotovoltaicReverseStatus(byte photovoltaicReverseStatus) {
         PhotovoltaicReverseStatus = photovoltaicReverseStatus;
     }
 
@@ -555,19 +555,19 @@ public class RealTimeOperationInfo extends BasePointInfo {
         ContinuousRunningHour = continuousRunningHour;
     }
 
-    public float getContinuousRunningMinute() {
+    public byte getContinuousRunningMinute() {
         return ContinuousRunningMinute;
     }
 
-    public void setContinuousRunningMinute(float continuousRunningMinute) {
+    public void setContinuousRunningMinute(byte continuousRunningMinute) {
         ContinuousRunningMinute = continuousRunningMinute;
     }
 
-    public float getContinuousRunningSecond() {
+    public byte getContinuousRunningSecond() {
         return ContinuousRunningSecond;
     }
 
-    public void setContinuousRunningSecond(float continuousRunningSecond) {
+    public void setContinuousRunningSecond(byte continuousRunningSecond) {
         ContinuousRunningSecond = continuousRunningSecond;
     }
 
@@ -595,12 +595,20 @@ public class RealTimeOperationInfo extends BasePointInfo {
         this.current24V = current24V;
     }
 
-    public float getNodeStatus() {
+    public byte getNodeStatus() {
         return nodeStatus;
     }
 
-    public void setNodeStatus(float nodeStatus) {
+    public void setNodeStatus(byte nodeStatus) {
         this.nodeStatus = nodeStatus;
+    }
+
+    public byte getLowComputeStatus() {
+        return LowComputeStatus;
+    }
+
+    public void setLowComputeStatus(byte lowComputeStatus) {
+        LowComputeStatus = lowComputeStatus;
     }
 
     public float getUPhaseCurrent() {
@@ -635,19 +643,19 @@ public class RealTimeOperationInfo extends BasePointInfo {
         FanSpeed2 = fanSpeed2;
     }
 
-    public float getSystemStatus() {
+    public byte getSystemStatus() {
         return SystemStatus;
     }
 
-    public void setSystemStatus(float systemStatus) {
+    public void setSystemStatus(byte systemStatus) {
         SystemStatus = systemStatus;
     }
 
-    public float getCpuStatus() {
+    public byte getCpuStatus() {
         return CpuStatus;
     }
 
-    public void setCpuStatus(float cpuStatus) {
+    public void setCpuStatus(byte cpuStatus) {
         CpuStatus = cpuStatus;
     }
 
