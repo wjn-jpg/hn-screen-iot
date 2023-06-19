@@ -297,6 +297,10 @@ public class PowerStationReport extends ByteMessage {
     }
 
 
+    public int getSourceAddr() {
+        return sourceAddr;
+    }
+
     public static void main(String[] args) {
         String a = "YX0";
         String b = "YX1";

@@ -1,0 +1,54 @@
+2023-06-16 10:06:18 [ main:318 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 1302 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-16 10:06:18 [ main:319 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-16 10:06:19 [ main:710 ] - [ INFO ] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-06-16 10:06:19 [ main:718 ] - [ INFO ] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-06-16 10:06:19 [ main:957 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-16 10:06:19 [ main:962 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-16 10:06:19 [ main:962 ] - [ INFO ] Starting service [Tomcat]
+2023-06-16 10:06:19 [ main:963 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-16 10:06:19 [ main:1014 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-16 10:06:19 [ main:1014 ] - [ INFO ] Root WebApplicationContext: initialization completed in 671 ms
+2023-06-16 10:06:19 [ main:1238 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-16 10:06:19 [ main:1266 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-16 10:06:19 [ main:1266 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-16 10:06:19 [ main:1312 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-16 10:06:20 [ main:1561 ] - [ INFO ] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-06-16 10:06:20 [ main:1561 ] - [ INFO ] Channel 'application.errorChannel' has 1 subscriber(s).
+2023-06-16 10:06:20 [ main:1561 ] - [ INFO ] started bean '_org.springframework.integration.errorLogger'
+2023-06-16 10:06:20 [ main:1561 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-16 10:06:20 [ main:1575 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-16 10:06:20 [ main:1581 ] - [ INFO ] Started HnScreenApplication in 1.505 seconds (JVM running for 2.195)
+2023-06-16 10:06:20 [ main:1636 ] - [ INFO ] MQTT服务已启动 端口为:8088
+2023-06-16 10:06:20 [ nioEventLoopGroup-6-1:1983 ] - [ INFO ] MQTT接收到的发送类型===>CONNECT
+2023-06-16 10:06:20 [ main:1987 ] - [ INFO ] 成功开启MQTT服务...
+2023-06-16 10:06:20 [ nioEventLoopGroup-6-1:1991 ] - [ INFO ] MQTT接收到的发送类型===>SUBSCRIBE
+2023-06-16 10:06:20 [ nioEventLoopGroup-6-1:1991 ] - [ INFO ] 客户端ef4a3202订阅主题ntdq成功!
+2023-06-16 10:06:50 [ pool-2-thread-3:31650 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-16 10:06:50 [ pool-2-thread-3:31651 ] - [ INFO ] ModBus客户端:Pho连接失败...
+2023-06-16 10:06:50 [ pool-2-thread-1:31651 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-16 10:06:50 [ pool-2-thread-1:31652 ] - [ INFO ] ModBus客户端:Fan连接失败...
+2023-06-16 10:06:50 [ pool-2-thread-2:31653 ] - [ INFO ] ModBus客户端连接失败...
+2023-06-16 10:06:50 [ pool-2-thread-2:31654 ] - [ INFO ] ModBus客户端:Energy连接失败...
+2023-06-16 10:07:17 [ http-nio-127.0.0.1-9090-exec-1:58451 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-16 10:07:17 [ http-nio-127.0.0.1-9090-exec-1:58451 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-06-16 10:07:17 [ http-nio-127.0.0.1-9090-exec-1:58452 ] - [ INFO ] Completed initialization in 1 ms
+2023-06-16 10:07:20 [ nioEventLoopGroup-6-1:61992 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-16 10:07:20 [ nioEventLoopGroup-6-1:61993 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:ef4a3202
+2023-06-16 10:08:18 [ http-nio-127.0.0.1-9090-exec-4:119499 ] - [ INFO ] {dataSource-1} inited
+2023-06-16 10:08:20 [ nioEventLoopGroup-6-1:121994 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-16 10:08:20 [ nioEventLoopGroup-6-1:121995 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:ef4a3202
+2023-06-16 10:09:20 [ nioEventLoopGroup-6-1:181999 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-16 10:09:20 [ nioEventLoopGroup-6-1:182000 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:ef4a3202
+2023-06-16 10:10:20 [ nioEventLoopGroup-6-1:242002 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-16 10:10:20 [ nioEventLoopGroup-6-1:242003 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:ef4a3202
+2023-06-16 10:11:20 [ nioEventLoopGroup-6-1:302007 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-16 10:11:20 [ nioEventLoopGroup-6-1:302007 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:ef4a3202
+2023-06-16 10:12:20 [ nioEventLoopGroup-6-1:362010 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-16 10:12:20 [ nioEventLoopGroup-6-1:362011 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:ef4a3202
+2023-06-16 10:13:20 [ nioEventLoopGroup-6-1:422012 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-16 10:13:20 [ nioEventLoopGroup-6-1:422013 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:ef4a3202
+2023-06-16 10:13:36 [ SpringApplicationShutdownHook:437775 ] - [ INFO ] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-06-16 10:13:36 [ SpringApplicationShutdownHook:437775 ] - [ INFO ] Channel 'application.errorChannel' has 0 subscriber(s).
+2023-06-16 10:13:36 [ SpringApplicationShutdownHook:437775 ] - [ INFO ] stopped bean '_org.springframework.integration.errorLogger'
+2023-06-16 10:13:36 [ SpringApplicationShutdownHook:437777 ] - [ INFO ] {dataSource-1} closing ...
+2023-06-16 10:13:36 [ SpringApplicationShutdownHook:437780 ] - [ INFO ] {dataSource-1} closed

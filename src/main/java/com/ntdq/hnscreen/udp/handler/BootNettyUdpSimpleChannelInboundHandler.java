@@ -1,5 +1,7 @@
 package com.ntdq.hnscreen.udp.handler;
 
+import com.alibaba.fastjson.JSON;
+import com.ntdq.hnscreen.mqtt.client.MqttConsumer;
 import com.ntdq.hnscreen.udp.domain.PowerStationReport;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -12,6 +14,13 @@ public class BootNettyUdpSimpleChannelInboundHandler extends SimpleChannelInboun
 
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, PowerStationReport powerStationReport) throws Exception {
-        System.out.println(powerStationReport);
+        String powerMqttTopicBySource = findPowerMqttTopicBySource(powerStationReport);
+        logger.info("转发充电桩数据主题:{}",powerMqttTopicBySource);
+        MqttConsumer.publish(powerMqttTopicBySource, JSON.toJSONString(powerMqttTopicBySource));
+    }
+
+    public static String findPowerMqttTopicBySource(PowerStationReport powerStationReport) {
+        int sourceAddr = powerStationReport.getSourceAddr();
+        return "POWER_" + sourceAddr;
     }
 }
