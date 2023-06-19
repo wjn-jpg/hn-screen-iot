@@ -15,6 +15,7 @@ public class ModBusHeaderEncoder {
         byteBuf.writeShort(modBusHeader.getProtocolId());
         byteBuf.writeShort(modBusHeader.getLength());
         byteBuf.writeByte(modBusHeader.getUnitId());
+//        byteBuf.writeByte(2);
     }
 
 }

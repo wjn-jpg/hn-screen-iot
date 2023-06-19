@@ -54,7 +54,8 @@ public class MqttConsumer {
         options.setConnectionTimeout(PropertiesUtil.MQTT_TIMEOUT);
         // 设置会话心跳时间
         options.setKeepAliveInterval(PropertiesUtil.MQTT_KEEP_ALIVE);
-        options.setMaxInflight(10000);
+
+        options.setMaxInflight(1000);
         // 是否清除session
         options.setCleanSession(false);
         return options;
@@ -72,7 +73,7 @@ public class MqttConsumer {
              * QOS2： “只有一次”，确保消息到达一次。这一级别可用于如下情况，在计费系统中，消息重复或丢失会导致不正确的结果，资源开销大
 
              */
-            qos[i] = 1;
+            qos[i] = 0;
         }
         System.out.println("--设置消息发布质量");
         return qos;
@@ -117,7 +118,7 @@ public class MqttConsumer {
 
      */
     public static void publish(String topic, String msg) {
-        publish(2, false, topic, msg);
+        publish(0, false, topic, msg);
     }
 
     /*

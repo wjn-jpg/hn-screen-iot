@@ -5,8 +5,14 @@ public class CommandExecutorFactory {
     public static com.ntdq.hnscreen.build.command.CommandGenExecutor findCommandExecutorByServiceName(String serviceName) {
         CommandGenExecutor commandGenExecutor = null;
         switch (serviceName) {
-            case "Energy":
-                commandGenExecutor = new EnergyExecutor();
+            case "EnergyPCS":
+                commandGenExecutor = new EnergyPCSExecutor();
+                return commandGenExecutor;
+            case "EnergyBA":
+                commandGenExecutor = new EnergyBAExecutor();
+                return commandGenExecutor;
+            case "EnergyPLC":
+                commandGenExecutor = new EnergyBAExecutor();
                 return commandGenExecutor;
             case "Pho":
                 commandGenExecutor = new PhotovoltaicInvertExecutor();

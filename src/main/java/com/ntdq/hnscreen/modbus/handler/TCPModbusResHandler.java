@@ -120,10 +120,15 @@ public class TCPModbusResHandler extends SimpleChannelInboundHandler<TCPModbusBy
         content.readBytes(data);
         modBusPayload.setData(data);
         RecAndWriMessage messageFactory = DataRecAndWriFactory.getMessageFactory(functionCode);
-        if (messageFactory != null) {
+        if (messageFactory != null) { //01 85 8B 01
             messageFactory.acceptMessage(ctx.channel(), modBusHeader, modBusPayload, transactionPointAttributeParseMap);
         } else {
             logger.info("没有此类型的功能码!");
         }
+    }
+
+    public static void main(String[] args) {
+        byte a = (byte) 188;
+        System.out.println(a);
     }
 }

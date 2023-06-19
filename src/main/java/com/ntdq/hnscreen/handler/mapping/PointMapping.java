@@ -1,7 +1,7 @@
 package com.ntdq.hnscreen.handler.mapping;
 
-import cn.hutool.core.util.ByteUtil;
-import com.ntdq.hnscreen.build.command.EnergyExecutor;
+import com.ntdq.hnscreen.build.command.EnergyBAExecutor;
+import com.ntdq.hnscreen.build.command.EnergyPCSExecutor;
 import com.ntdq.hnscreen.build.command.FanInvertExecutor;
 import com.ntdq.hnscreen.build.command.PhotovoltaicInvertExecutor;
 import com.ntdq.hnscreen.domain.attribute.TemplateAttribute;
@@ -101,9 +101,10 @@ public class PointMapping implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        EnergyExecutor.setPointMapping(this);
+        EnergyPCSExecutor.setPointMapping(this);
         PhotovoltaicInvertExecutor.setPointMapping(this);
         FanInvertExecutor.setPointMapping(this);
+        EnergyBAExecutor.setPointMapping(this);
 //        List<TemplateAttribute> allAttributeInfoByTemplateId = attributeMapper.findAllAttributeInfoByTemplateId(templateIdOnEnergy);
 //        System.out.println(allAttributeInfoByTemplateId);
 //        allAttributeInfoByTemplateId = allAttributeInfoByTemplateId.stream().sorted(Comparator.comparingLong(TemplateAttribute::getAtrbMessageAddress)).collect(Collectors.toList());

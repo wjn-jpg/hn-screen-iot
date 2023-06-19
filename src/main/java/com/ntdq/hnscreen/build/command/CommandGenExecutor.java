@@ -56,8 +56,14 @@ public interface CommandGenExecutor {
             //末尾地址
             long lastAddress = templateAttributes.size() > 0 ? templateAttributes.get(templateAttributes.size() - 1).getAtrbMessageAddress() : 0;
 
-            int count = ((int) (lastAddress - address)) + 1;
-            count = count + (templateAttributes.get(templateAttributes.size() - 1).getAtrbDataLength() / 2);
+            int totalLength = 0;
+            for (TemplateAttribute templateAttribute : templateAttributes) {
+                totalLength += templateAttribute.getAtrbDataLength();
+            }
+            int count = totalLength / 2;
+//            int count = ((int) (lastAddress - address)) + 1;
+//            count = count + (templateAttributes.get(templateAttributes.size() - 1).getAtrbDataLength() / 2);
+            //=====
 //            byte[] payload = new byte[4];
 //            ByteUtil.copyBytes(payload, ByteUtil.hexStringToBytes(String.valueOf(address)), 0);
 //            ByteUtil.copyBytes(payload, ByteUtil.intToBytesBig(count), 2);

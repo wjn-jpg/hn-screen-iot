@@ -3,11 +3,17 @@ package com.ntdq.hnscreen.modbus.data;
 import cn.hutool.core.util.ByteUtil;
 import com.ntdq.hnscreen.domain.attribute.TemplateAttribute;
 import com.ntdq.hnscreen.domain.point.BasePointInfo;
+import com.ntdq.hnscreen.domain.point.EnergyStorage.EnergyStackYC;
+import com.ntdq.hnscreen.domain.point.EnergyStorage.EnergyStoreYC;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.nio.ByteBuffer;
 import java.text.DecimalFormat;
 import java.util.List;
 
@@ -50,7 +56,7 @@ public abstract class MappingAttributeMessage implements RecAndWriMessage {
                 switch (templateAttribute.getAtrbDataLength()) {
                     case 1:
                         byte value1Byte = resultByte[0];
-                        executeMethod.invoke(basePointInfo,value1Byte);
+                        executeMethod.invoke(basePointInfo, value1Byte);
                         break;
                     case 2:
                         short value2Byte = ByteUtil.bytesToShort(resultByte);
@@ -58,7 +64,19 @@ public abstract class MappingAttributeMessage implements RecAndWriMessage {
                         executeMethod.invoke(basePointInfo, value2Byte);
                         break;
                     case 4:
-                        float value4Byte = Float.intBitsToFloat(resultByte[0] ^ resultByte[1] << 8 ^ resultByte[2] << 16 ^ resultByte[3] << 24);
+                        if (basePointInfo instanceof EnergyStoreYC) {
+                            byte[] reverseByte = new byte[4];
+                            System.arraycopy(resultByte, 2, reverseByte, 0, 2);
+                            System.arraycopy(resultByte, 0, reverseByte, 2, 2);
+                            resultByte = reverseByte;
+                        }else if (basePointInfo instanceof EnergyStackYC){
+                            ByteBuffer buffer = ByteBuffer.wrap(resultByte);
+                            float value = buffer.getFloat();
+                            executeMethod.invoke(basePointInfo,value);
+                            break;
+                        }
+                        float value4Byte = ByteUtil.bytesToInt(resultByte);
+//                        float value4Byte = Float.intBitsToFloat(resultByte[0] ^ resultByte[1] << 8 ^ resultByte[2] << 16 ^ resultByte[3] << 24);
                         // double value4Byte = ByteUtil.bytesToDouble(resultByte);
                         value4Byte = value4Byte * templateAttribute.getAtrbCoefficient();
                         executeMethod.invoke(basePointInfo, value4Byte);
@@ -74,10 +92,24 @@ public abstract class MappingAttributeMessage implements RecAndWriMessage {
         return basePointInfo;
     }
 
-    public static void main(String[] args) {
-        DecimalFormat decimalFormat = new DecimalFormat("#0.00");
-        String format = decimalFormat.format(2.3830346E28);
-        System.out.println(format);
+    public static void main(String[] args) throws Exception {
+//        DecimalFormat decimalFormat = new DecimalFormat("#0.00");
+//        String format = decimalFormat.format(2.3830346E28);
+//        System.out.println(format);
+        byte[] data = new byte[]{0x00, 0x00, 0x2c, (byte) 0xa6};
+        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(data);
+        DataInputStream dataInputStream = new DataInputStream(byteArrayInputStream);
+        float v = dataInputStream.readFloat();
+        System.out.println(v);
+        BigDecimal bigDecimal = new BigDecimal(v);
+        System.out.println(bigDecimal);
+
+        int a = 114300;
+        float b = a;
+        System.out.println(b);
+
+        float resutlt = ByteUtil.bytesToInt(data);
+        System.out.println(resutlt);
     }
 
 }

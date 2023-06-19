@@ -297,6 +297,222 @@ public class PowerStationReport extends ByteMessage {
     }
 
 
+    public static AtomicInteger getAtomicInteger() {
+        return atomicInteger;
+    }
+
+    public static void setAtomicInteger(AtomicInteger atomicInteger) {
+        PowerStationReport.atomicInteger = atomicInteger;
+    }
+
+    public byte getHeader() {
+        return header;
+    }
+
+    public void setHeader(byte header) {
+        this.header = header;
+    }
+
+    public short getLength() {
+        return length;
+    }
+
+    public void setLength(short length) {
+        this.length = length;
+    }
+
+    public String getDeviceClient() {
+        return deviceClient;
+    }
+
+    public void setDeviceClient(String deviceClient) {
+        this.deviceClient = deviceClient;
+    }
+
+    public int getSourceAddr() {
+        return sourceAddr;
+    }
+
+    public void setSourceAddr(int sourceAddr) {
+        this.sourceAddr = sourceAddr;
+    }
+
+    public int getTargetAddr() {
+        return targetAddr;
+    }
+
+    public void setTargetAddr(int targetAddr) {
+        this.targetAddr = targetAddr;
+    }
+
+    public byte[] getYX0() {
+        return YX0;
+    }
+
+    public void setYX0(byte[] YX0) {
+        this.YX0 = YX0;
+    }
+
+    public byte[] getYX1() {
+        return YX1;
+    }
+
+    public void setYX1(byte[] YX1) {
+        this.YX1 = YX1;
+    }
+
+    public byte[] getYX2() {
+        return YX2;
+    }
+
+    public void setYX2(byte[] YX2) {
+        this.YX2 = YX2;
+    }
+
+    public byte[] getYX3() {
+        return YX3;
+    }
+
+    public void setYX3(byte[] YX3) {
+        this.YX3 = YX3;
+    }
+
+    public byte[] getYX4() {
+        return YX4;
+    }
+
+    public void setYX4(byte[] YX4) {
+        this.YX4 = YX4;
+    }
+
+    public byte[] getYX5() {
+        return YX5;
+    }
+
+    public void setYX5(byte[] YX5) {
+        this.YX5 = YX5;
+    }
+
+    public double getChargingOutputVoltage() {
+        return ChargingOutputVoltage;
+    }
+
+    public void setChargingOutputVoltage(double chargingOutputVoltage) {
+        ChargingOutputVoltage = chargingOutputVoltage;
+    }
+
+    public double getChargingOutputCurrent() {
+        return ChargingOutputCurrent;
+    }
+
+    public void setChargingOutputCurrent(double chargingOutputCurrent) {
+        ChargingOutputCurrent = chargingOutputCurrent;
+    }
+
+    public short getSOC() {
+        return SOC;
+    }
+
+    public void setSOC(short SOC) {
+        this.SOC = SOC;
+    }
+
+    public short getMinimumBatteryTemperature() {
+        return MinimumBatteryTemperature;
+    }
+
+    public void setMinimumBatteryTemperature(short minimumBatteryTemperature) {
+        MinimumBatteryTemperature = minimumBatteryTemperature;
+    }
+
+    public short getMaximumBatteryTemperature() {
+        return MaximumBatteryTemperature;
+    }
+
+    public void setMaximumBatteryTemperature(short maximumBatteryTemperature) {
+        MaximumBatteryTemperature = maximumBatteryTemperature;
+    }
+
+    public double getMaximumVoltageSingleBattery() {
+        return MaximumVoltageSingleBattery;
+    }
+
+    public void setMaximumVoltageSingleBattery(double maximumVoltageSingleBattery) {
+        MaximumVoltageSingleBattery = maximumVoltageSingleBattery;
+    }
+
+    public double getMinimumVoltageSingleBattery() {
+        return MinimumVoltageSingleBattery;
+    }
+
+    public void setMinimumVoltageSingleBattery(double minimumVoltageSingleBattery) {
+        MinimumVoltageSingleBattery = minimumVoltageSingleBattery;
+    }
+
+    public double getChargingPilotVoltage() {
+        return ChargingPilotVoltage;
+    }
+
+    public void setChargingPilotVoltage(double chargingPilotVoltage) {
+        ChargingPilotVoltage = chargingPilotVoltage;
+    }
+
+    public double getBMSDemandVoltage() {
+        return BMSDemandVoltage;
+    }
+
+    public void setBMSDemandVoltage(double BMSDemandVoltage) {
+        this.BMSDemandVoltage = BMSDemandVoltage;
+    }
+
+    public double getBMSDemandCurrent() {
+        return BMSDemandCurrent;
+    }
+
+    public void setBMSDemandCurrent(double BMSDemandCurrent) {
+        this.BMSDemandCurrent = BMSDemandCurrent;
+    }
+
+    public int getReserve() {
+        return reserve;
+    }
+
+    public void setReserve(int reserve) {
+        this.reserve = reserve;
+    }
+
+    public int getPowerRegulationInstructionType() {
+        return PowerRegulationInstructionType;
+    }
+
+    public void setPowerRegulationInstructionType(int powerRegulationInstructionType) {
+        PowerRegulationInstructionType = powerRegulationInstructionType;
+    }
+
+    public short getPowerRegulationParameters() {
+        return PowerRegulationParameters;
+    }
+
+    public void setPowerRegulationParameters(short powerRegulationParameters) {
+        PowerRegulationParameters = powerRegulationParameters;
+    }
+
+    public byte getCheck() {
+        return check;
+    }
+
+    public void setCheck(byte check) {
+        this.check = check;
+    }
+
+    public byte getFinishFlag() {
+        return finishFlag;
+    }
+
+    public void setFinishFlag(byte finishFlag) {
+        this.finishFlag = finishFlag;
+    }
+
     public static void main(String[] args) {
         String a = "YX0";
         String b = "YX1";

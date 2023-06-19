@@ -3,13 +3,13 @@ package com.ntdq.hnscreen.build.command;
 
 import com.ntdq.hnscreen.build.modbusmessage.ModBusRtuSendMessage;
 import com.ntdq.hnscreen.domain.attribute.TemplateAttribute;
-import com.ntdq.hnscreen.domain.point.EnergyStorage.EnergyStorageInverter;
+import com.ntdq.hnscreen.domain.point.EnergyStorage.EnergyStoreYC;
 import com.ntdq.hnscreen.handler.mapping.PointMapping;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class EnergyExecutor implements CommandGenExecutor {
+public class EnergyPCSExecutor implements CommandGenExecutor {
 
     private static final int FIRST_ADDRESS = 0;
 
@@ -22,7 +22,7 @@ public class EnergyExecutor implements CommandGenExecutor {
     private static final long templateEnergy = 1628209117201903617L;
 
     public static void setPointMapping(PointMapping pointMapping) {
-        EnergyExecutor.pointMapping = pointMapping;
+        EnergyPCSExecutor.pointMapping = pointMapping;
     }
 
 
@@ -49,9 +49,15 @@ public class EnergyExecutor implements CommandGenExecutor {
     public List<PointAttributeParse> getPointAttributeParseList() {
         List<TemplateAttribute> templateAttributesByIndex = pointMapping.getTemplateAttributesByIndex(templateEnergy);
         //根据顺序来
-        PointAttributeParse pointAttributeParse = new PointAttributeParse();
-        pointAttributeParse.setBoClass(EnergyStorageInverter.class);
-        pointAttributeParses.add(pointAttributeParse);
+//        PointAttributeParse energyProtectParse = new PointAttributeParse();
+//        energyProtectParse.setBoClass(EnergyProtectYX.class);
+//        pointAttributeParses.add(energyProtectParse);
+//        PointAttributeParse energyStatusParse = new PointAttributeParse();
+//        energyStatusParse.setBoClass(EnergyStatusYX.class);
+//        pointAttributeParses.add(energyStatusParse);
+        PointAttributeParse energyYC = new PointAttributeParse();
+        energyYC.setBoClass(EnergyStoreYC.class);
+        pointAttributeParses.add(energyYC);
 
         pointAttributeParses.forEach(pointAttributeParseItem -> {
             fillPointParse(pointAttributeParseItem, templateAttributesByIndex);

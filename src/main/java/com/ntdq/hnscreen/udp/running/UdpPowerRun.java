@@ -20,6 +20,6 @@ public class UdpPowerRun implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        //udpPowerStartServerList.forEach(UdpPowerStartServer::startUdpServer);
+        udpPowerStartServerList.forEach(UdpPowerStartServer::startUdpServer);
     }
 }
