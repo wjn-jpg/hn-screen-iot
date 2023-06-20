@@ -1,6 +1,6 @@
 mqtt:
   server:
-    addr: 127.0.0.1
+    addr: 192.168.137.93
     port: 8088
     username: ntdq
     password: ntdq
@@ -10,9 +10,9 @@ spring:
   profiles:
     active: local #local
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/Manager?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/power_station?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&characterEncoding=utf8
     username: root
-    password: 11111111
+    password: wjn20000101
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     ######################### Druid????????  #################

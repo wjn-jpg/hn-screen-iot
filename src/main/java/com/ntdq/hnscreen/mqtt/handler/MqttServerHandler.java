@@ -31,7 +31,6 @@ public class MqttServerHandler extends SimpleChannelInboundHandler<MqttMessage> 
     private final MqttServerBOBase mqttServerBO;
 
 
-
     public MqttServerHandler(SessionSocketHolder sessionSocketHolder, MqttServerBOBase mqttServerBO) {
         this.sessionSocketHolder = sessionSocketHolder;
         this.mqttServerBO = mqttServerBO;
@@ -114,7 +113,7 @@ public class MqttServerHandler extends SimpleChannelInboundHandler<MqttMessage> 
                 disConnect(channel, connectMessage);
                 return;
             }
-            logger.info("mqtt客户端:{} 连接成功...",channel.id());
+            logger.info("mqtt客户端:{} 连接成功...", channel.id());
         }
         //连接业务校验完成,Qos1类型，需要答复
         MqttConnAckMessage okResp = (MqttConnAckMessage) MqttMessageFactory.newMessage(new MqttFixedHeader(
@@ -139,7 +138,7 @@ public class MqttServerHandler extends SimpleChannelInboundHandler<MqttMessage> 
             String message = new String(tmp, "UTF-8");
             logger.info("客户端发送的消息:{}", message);
             sessionSocketHolder.executeListenerTopic(channel, publishMessage.variableHeader().topicName(), message);
-            puBackMessageForConfirm(channel,publishMessage,"puBackACK");
+            puBackMessageForConfirm(channel, publishMessage, "puBackACK");
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
@@ -194,6 +193,7 @@ public class MqttServerHandler extends SimpleChannelInboundHandler<MqttMessage> 
 
     /**
      * 客户端QOS1的消息类型 就是需要服务端响应包 否则客户端一直阻塞
+     *
      * @param channel
      * @param message
      */
@@ -207,11 +207,12 @@ public class MqttServerHandler extends SimpleChannelInboundHandler<MqttMessage> 
 
     /**
      * 客户端发布消息 等待mqtt服务端确认
+     *
      * @param channel
      * @param mqttPublishMessage
      * @param payload
      */
-    private void puBackMessageForConfirm(Channel channel,MqttPublishMessage mqttPublishMessage,String payload){
+    private void puBackMessageForConfirm(Channel channel, MqttPublishMessage mqttPublishMessage, String payload) {
 
 //        MqttPubAckMessage mqttAckReturnMessage = (MqttPubAckMessage) MqttMessageFactory.newMessage(
 //                new MqttFixedHeader(MqttMessageType.PUBACK, false, MqttQoS.AT_LEAST_ONCE, false, 0),
@@ -253,4 +254,9 @@ public class MqttServerHandler extends SimpleChannelInboundHandler<MqttMessage> 
         logger.info("删除channel容器id:{}", ctx.channel().id());
     }
 
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        logger.info("客户端与服务端建立连接...{}", ctx.channel().toString());
+        sessionSocketHolder.addClient(ctx.channel(), ClientDto.buildClient(ctx.channel().id().asShortText(), ctx.channel(), null));
+    }
 }

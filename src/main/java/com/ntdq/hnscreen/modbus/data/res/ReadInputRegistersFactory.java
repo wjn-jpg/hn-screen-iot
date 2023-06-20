@@ -1,5 +1,6 @@
 package com.ntdq.hnscreen.modbus.data.res;
 
+import cn.hutool.core.util.ByteUtil;
 import com.alibaba.fastjson.JSON;
 import com.ntdq.hnscreen.annotation.Topic;
 import com.ntdq.hnscreen.build.command.PointAttributeParse;
@@ -34,6 +35,13 @@ public class ReadInputRegistersFactory extends MappingAttributeMessage {
             return;
         }
         byte[] data = modBusPayload.getData();
+//        int[] ar = new int[50];
+//        for (int i = 0; i < data.length; i++) {
+//            byte[] r = new byte[4];
+//            System.arraycopy(data,i*4 +1,r,0,4);
+//            ar[i] = ByteUtil.bytesToInt(r);
+//        }
+//        System.out.println(ar);
         BasePointInfo instance = null;
         try {
             instance = mappingAttribute(data, (BasePointInfo) pointAttributeParse.getBoClass().newInstance(), pointAttributeParse.getTemplateAttributes());

@@ -26,7 +26,7 @@ public class SyncExecutor {
      */
     private static final Map<String, Channel> serviceChannelMap = new ConcurrentHashMap<>();
 
-    private static final Executor TaskPool = new ThreadPoolExecutor(5, 10, 1, TimeUnit.DAYS, new LinkedBlockingDeque<>());
+    private static final Executor TaskPool = new ThreadPoolExecutor(10, 20, 1, TimeUnit.DAYS, new LinkedBlockingDeque<>());
 
 
     public static void startCollect(String serviceName, Channel channel, CommandGenExecutor commandGenExecutor, List<PointAttributeParse> attributeParses, SocketStyle style) {
@@ -48,10 +48,31 @@ public class SyncExecutor {
                 }
                 break;
         }
+        if (serviceName.equalsIgnoreCase("Fan")){
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        if (serviceName.equalsIgnoreCase("EnergyBA")){
+            try {
+                Thread.sleep(750);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        if (serviceName.equalsIgnoreCase("EnergyPCS")){
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
         flushThread(modBusMessages, channel);
     }
 
-    private static void flushThread(List<? extends ModBusMessage> modBusMessage, Channel channel) {
+    private static void flushThread(List<? extends ModBusMessage> modBusMessages, Channel channel) {
         /**
          * 线程每隔5秒刷新一次
          */
@@ -59,7 +80,7 @@ public class SyncExecutor {
             @Override
             public void run() {
                 while (true) {
-                    modBusMessage.forEach(modBusMessage -> {
+                    modBusMessages.forEach(modBusMessage -> {
                         if (modBusMessage instanceof ModBusTcpMessage) {
                             channel.writeAndFlush((ModBusTcpMessage) modBusMessage);
                         } else if (modBusMessage instanceof ModBusRtuSendMessage) {

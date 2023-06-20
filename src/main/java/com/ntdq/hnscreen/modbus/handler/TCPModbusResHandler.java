@@ -15,6 +15,7 @@ import com.ntdq.hnscreen.style.SocketStyle;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelPromise;
 import io.netty.channel.SimpleChannelInboundHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +28,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class TCPModbusResHandler extends SimpleChannelInboundHandler<TCPModbusByteBufHolder> {
 
     private static final Logger logger = LoggerFactory.getLogger(TCPModbusResDecoder.class);
+
+    private static final Map<String, ChannelPromise> serviceNamePromiseMap = new ConcurrentHashMap<>();
 
     public static final int HEADER_LENGTH = 8;
 
@@ -95,6 +98,41 @@ public class TCPModbusResHandler extends SimpleChannelInboundHandler<TCPModbusBy
         ModBusChannelManager.remove(serviceName);
     }
 
+    public static ChannelPromiseWrapper newPromise(String serviceName) {
+        ChannelPromiseWrapper channelPromiseWrapper = new ChannelPromiseWrapper();
+        Channel channel = ModBusChannelManager.getChannel(serviceName);
+        ChannelPromise channelPromise = null;
+        if (channel != null) {
+            channelPromise = channel.newPromise();
+            serviceNamePromiseMap.put(serviceName, channelPromise);
+        }
+        channelPromiseWrapper.setChannel(channel);
+        channelPromiseWrapper.setChannelPromise(channelPromise);
+        return channelPromiseWrapper;
+    }
+
+    public static class ChannelPromiseWrapper {
+        private Channel channel;
+
+        private ChannelPromise channelPromise;
+
+        public Channel getChannel() {
+            return channel;
+        }
+
+        public void setChannel(Channel channel) {
+            this.channel = channel;
+        }
+
+        public ChannelPromise getChannelPromise() {
+            return channelPromise;
+        }
+
+        public void setChannelPromise(ChannelPromise channelPromise) {
+            this.channelPromise = channelPromise;
+        }
+    }
+
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, TCPModbusByteBufHolder msg) throws Exception {
         logger.info("拿到TCPModbusByteBufHolder对象...");
@@ -118,12 +156,34 @@ public class TCPModbusResHandler extends SimpleChannelInboundHandler<TCPModbusBy
         modBusPayload.setDataLength((short) dataLength);
         byte[] data = new byte[dataLength];
         content.readBytes(data);
+        executeWaitIfControl(functionCode, data);
         modBusPayload.setData(data);
         RecAndWriMessage messageFactory = DataRecAndWriFactory.getMessageFactory(functionCode);
-        if (messageFactory != null) {
+        if (messageFactory != null) { //01 85 8B 01
             messageFactory.acceptMessage(ctx.channel(), modBusHeader, modBusPayload, transactionPointAttributeParseMap);
         } else {
             logger.info("没有此类型的功能码!");
         }
+    }
+
+
+    /**
+     * 进行等待 如果是执行调控
+     *
+     * @param funCode
+     * @param data
+     */
+    private void executeWaitIfControl(int funCode, byte[] data) {
+        ChannelPromise channelPromise = serviceNamePromiseMap.get(serviceName);
+        if (funCode == 6 && data.length == 4) {
+            channelPromise.setSuccess();
+        } else if (funCode == 134 && data.length == 1) {
+            channelPromise.setFailure(new RuntimeException());
+        }
+    }
+
+    public static void main(String[] args) {
+        byte a = (byte) 188;
+        System.out.println(a);
     }
 }

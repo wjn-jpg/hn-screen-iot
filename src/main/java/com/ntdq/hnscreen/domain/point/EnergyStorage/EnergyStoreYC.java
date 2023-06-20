@@ -1,3 +1,4 @@
+
 package com.ntdq.hnscreen.domain.point.EnergyStorage;
 
 import com.ntdq.hnscreen.annotation.AttributeInfo;
@@ -327,3 +328,4 @@ public class EnergyStoreYC extends BasePointInfo {
         TotalGeneratingCapacityHigh = totalGeneratingCapacityHigh;
     }
 }
+

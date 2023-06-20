@@ -49,10 +49,21 @@ public interface CommandGenExecutor {
         List<ModBusTcpMessage> modBusTcpMessages = new LinkedList<>();
         pointAttributeParseList.forEach(pointAttributeParse -> {
             List<TemplateAttribute> templateAttributes = pointAttributeParse.getTemplateAttributes();
-            //获取获取数据数量
-            int count = templateAttributes.size();
+
             //拿到首地址
             long address = templateAttributes.size() > 0 ? templateAttributes.get(0).getAtrbMessageAddress() : 0;
+
+            //末尾地址
+            long lastAddress = templateAttributes.size() > 0 ? templateAttributes.get(templateAttributes.size() - 1).getAtrbMessageAddress() : 0;
+
+            int totalLength = 0;
+            for (TemplateAttribute templateAttribute : templateAttributes) {
+                totalLength += templateAttribute.getAtrbDataLength();
+            }
+            int count = totalLength / 2;
+//            int count = ((int) (lastAddress - address)) + 1;
+//            count = count + (templateAttributes.get(templateAttributes.size() - 1).getAtrbDataLength() / 2);
+            //=====
 //            byte[] payload = new byte[4];
 //            ByteUtil.copyBytes(payload, ByteUtil.hexStringToBytes(String.valueOf(address)), 0);
 //            ByteUtil.copyBytes(payload, ByteUtil.intToBytesBig(count), 2);

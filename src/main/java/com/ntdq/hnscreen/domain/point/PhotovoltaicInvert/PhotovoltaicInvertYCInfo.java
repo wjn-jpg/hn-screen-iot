@@ -2,12 +2,14 @@ package com.ntdq.hnscreen.domain.point.PhotovoltaicInvert;
 
 import com.ntdq.hnscreen.annotation.AttributeInfo;
 import com.ntdq.hnscreen.annotation.ModelArguments;
+import com.ntdq.hnscreen.annotation.Topic;
 import com.ntdq.hnscreen.domain.point.BasePointInfo;
 
 /**
  * 光伏逆变器遥测信息
  */
 @AttributeInfo(startIndex = 2999, endIndex = 3043, funcType = 4)
+@Topic(topicName = "PhotoInvertYC")
 public class PhotovoltaicInvertYCInfo extends BasePointInfo {
 
     /**

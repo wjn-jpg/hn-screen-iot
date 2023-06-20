@@ -36,15 +36,15 @@ public class SessionSocketHolder {
         CLIENT_CHANNEL_MAP.put(channel.id().asShortText(), clientDto);
     }
 
-    public void removeClient(Channel channel){
-         CLIENT_CHANNEL_MAP.remove(channel.id().asShortText());
+    public void removeClient(Channel channel) {
+        CLIENT_CHANNEL_MAP.remove(channel.id().asShortText());
     }
 
-    public void addTopic(Channel channel,String topic){
+    public void addTopic(Channel channel, String topic) {
         ClientDto clientDto = CLIENT_CHANNEL_MAP.getOrDefault(channel.id().asShortText(), null);
-        if (clientDto!=null){
+        if (clientDto != null) {
             List<String> topicList = clientDto.getTopic();
-            if (topicList==null){
+            if (topicList == null) {
                 topicList = new ArrayList<>();
             }
             topicList.add(topic);
@@ -53,11 +53,10 @@ public class SessionSocketHolder {
     }
 
     /**
-     *
      * @param topic
      * @param message
      */
-    public void executeListenerTopic(Channel sendMessageChannel,String topic,String message){
+    public void executeListenerTopic(Channel sendMessageChannel, String topic, String message) {
         Set<Map.Entry<String, ClientDto>> chanelClientSet = CLIENT_CHANNEL_MAP.entrySet().stream()
                 .filter(stringClientDtoEntry -> !stringClientDtoEntry.getKey().equals(sendMessageChannel.id().asShortText())
                         && stringClientDtoEntry.getValue().hasTopic(topic))
@@ -65,10 +64,10 @@ public class SessionSocketHolder {
         try {
             for (Map.Entry<String, ClientDto> stringClientDtoEntry : chanelClientSet) {
                 ClientDto clientDto = stringClientDtoEntry.getValue();
-                clientDto.sendMessage(topic,message);
+                clientDto.sendMessage(topic, message);
             }
-        }catch (InterruptedException e){
-            logger.info("主题分发失败:{} 消息为:{}",topic,message);
+        } catch (InterruptedException e) {
+            logger.info("主题分发失败:{} 消息为:{}", topic, message);
         }
     }
 

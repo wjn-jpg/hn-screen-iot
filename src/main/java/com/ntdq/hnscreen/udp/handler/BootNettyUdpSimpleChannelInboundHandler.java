@@ -5,12 +5,15 @@ import com.ntdq.hnscreen.mqtt.client.MqttConsumer;
 import com.ntdq.hnscreen.udp.domain.PowerStationReport;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.handler.codec.mqtt.MqttMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BootNettyUdpSimpleChannelInboundHandler extends SimpleChannelInboundHandler<PowerStationReport> {
 
     private static final Logger logger = LoggerFactory.getLogger(BootNettyUdpSimpleChannelInboundHandler.class);
+
+    private static final String POWER_TOPIC = "device/powerReport";
 
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, PowerStationReport powerStationReport) throws Exception {
@@ -23,4 +26,5 @@ public class BootNettyUdpSimpleChannelInboundHandler extends SimpleChannelInboun
         int sourceAddr = powerStationReport.getSourceAddr();
         return "POWER_" + sourceAddr;
     }
+
 }

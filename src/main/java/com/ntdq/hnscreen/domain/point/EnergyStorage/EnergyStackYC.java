@@ -3,13 +3,14 @@ package com.ntdq.hnscreen.domain.point.EnergyStorage;
 import com.ntdq.hnscreen.annotation.AttributeInfo;
 import com.ntdq.hnscreen.annotation.ModelArguments;
 import com.ntdq.hnscreen.annotation.Topic;
+import com.ntdq.hnscreen.domain.point.BasePointInfo;
 
 /**
  * 电池堆
  */
 @Topic(topicName = "ENERGY_STACK_YC")
 @AttributeInfo(startIndex = 51, endIndex = 69, funcType = 4)
-public class EnergyStackYC {
+public class EnergyStackYC extends BasePointInfo {
 
     /**
      * "电池堆电压"

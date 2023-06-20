@@ -82,6 +82,12 @@ public class ModBusMessageGenerate {
             case 4:
                 modBusPayload.setFunctionCode(ModBusFunctionCode.ReadInputRegisters);
                 break;
+            case 5:
+                modBusPayload.setFunctionCode(ModBusFunctionCode.WriteSingleCoil);
+                break;
+            case 6:
+                modBusPayload.setFunctionCode(ModBusFunctionCode.WriteSingleRegister);
+                break;
         }
         byte[] bytes = new byte[4];
         ByteUtil.copyBytes(bytes, ByteUtil.intToBytesBig(address), 0);
