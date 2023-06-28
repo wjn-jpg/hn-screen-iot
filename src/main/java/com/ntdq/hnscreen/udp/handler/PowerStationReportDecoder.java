@@ -1,5 +1,6 @@
 package com.ntdq.hnscreen.udp.handler;
 
+import com.ntdq.hnscreen.modbus.util.ModBusChannelManager;
 import com.ntdq.hnscreen.udp.domain.PowerStationReport;
 import com.ntdq.hnscreen.util.CommonByteUtils;
 import io.netty.buffer.ByteBuf;
@@ -19,7 +20,7 @@ public class PowerStationReportDecoder extends MessageToMessageDecoder<ByteBuf> 
      */
     public static final int MIN_SIZE = 15;
 
-    private String serviceName;
+    private final String serviceName;
 
     public PowerStationReportDecoder(String serviceName) {
         this.serviceName = serviceName;
@@ -28,7 +29,7 @@ public class PowerStationReportDecoder extends MessageToMessageDecoder<ByteBuf> 
 
     @Override
     protected void decode(ChannelHandlerContext channelHandlerContext, ByteBuf in, List<Object> out) throws Exception {
-        logger.info("{}开始解析字节数据...",serviceName);
+        logger.info("{}开始解析字节数据...", serviceName);
         if (in.readableBytes() < MIN_SIZE) {
             logger.info("读取到无用的字节数据:{}", in.readableBytes());
             return;
@@ -39,5 +40,10 @@ public class PowerStationReportDecoder extends MessageToMessageDecoder<ByteBuf> 
         String data = CommonByteUtils.BinaryToHexString(byteData);
         logger.info("解析出的数据为:{}", data);
         out.add(PowerStationReport.build(byteData));
+    }
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        ModBusChannelManager.addChannel(serviceName, ctx.channel());
     }
 }

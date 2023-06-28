@@ -8,7 +8,7 @@ public class MqttServerBOBase {
 
     private long currentProcessThread;
 
-    @Value("${mqtt.server.addr}")
+    @Value("${mqtt.server.adder}")
     private String mqttAddress;
 
     @Value("${mqtt.server.port}")

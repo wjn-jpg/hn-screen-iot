@@ -139,7 +139,6 @@ public class EnergyStoreYC extends BasePointInfo {
     @ModelArguments(code = "ModuleA1Temperature", mean = "模块A1温度", number = 19)
     private short ModuleA1Temperature;
 
-
     /**
      * 交流无功功率
      */

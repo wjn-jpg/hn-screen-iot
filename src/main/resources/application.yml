@@ -1,6 +1,6 @@
 mqtt:
   server:
-    addr: 192.168.137.93
+    adder: 127.0.0.1
     port: 8088
     username: ntdq
     password: ntdq

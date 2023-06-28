@@ -5,7 +5,6 @@ import com.ntdq.hnscreen.mqtt.client.MqttConsumer;
 import com.ntdq.hnscreen.udp.domain.PowerStationReport;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.codec.mqtt.MqttMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

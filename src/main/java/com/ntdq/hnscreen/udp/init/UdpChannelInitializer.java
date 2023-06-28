@@ -1,14 +1,20 @@
 package com.ntdq.hnscreen.udp.init;
 
+import com.ntdq.hnscreen.modbus.util.ModBusChannelManager;
+import com.ntdq.hnscreen.udp.domain.PowerModifyRequest;
 import com.ntdq.hnscreen.udp.handler.BootNettyUdpSimpleChannelInboundHandler;
 import com.ntdq.hnscreen.udp.handler.HeartCheckHandler;
+import com.ntdq.hnscreen.udp.handler.PowerRequestModifyEncoder;
 import com.ntdq.hnscreen.udp.handler.PowerStationReportDecoder;
 import io.netty.channel.ChannelHandler;
+import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.DatagramChannel;
 import io.netty.handler.codec.DatagramPacketDecoder;
+import io.netty.handler.codec.DatagramPacketEncoder;
 import io.netty.handler.codec.MessageToMessageDecoder;
+import io.netty.handler.codec.MessageToMessageEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 
 import java.util.concurrent.TimeUnit;
@@ -19,18 +25,32 @@ public class UdpChannelInitializer extends ChannelInitializer<DatagramChannel> {
 
     private static final int writeTimeout = 100000;
 
-    private String serviceName;
+    private final String serviceName;
 
     public UdpChannelInitializer(String serviceName) {
         this.serviceName = serviceName;
     }
 
     @Override
-    protected void initChannel(DatagramChannel ch){
+    protected void initChannel(DatagramChannel ch) {
         ChannelPipeline pipeline = ch.pipeline();
-        pipeline.addLast(new ChannelHandler[]{new IdleStateHandler((long)this.readTimeout, (long)this.writeTimeout, 0L, TimeUnit.MILLISECONDS)});
-        pipeline.addLast("hearCheckHandler",new HeartCheckHandler());
-        pipeline.addLast(new ChannelHandler[]{new DatagramPacketDecoder((MessageToMessageDecoder)new PowerStationReportDecoder(serviceName))});
+        pipeline.addLast(new ChannelHandler[]{new IdleStateHandler((long) this.readTimeout, (long) this.writeTimeout, 0L, TimeUnit.MILLISECONDS)});
+        pipeline.addLast("hearCheckHandler", new HeartCheckHandler());
+        pipeline.addLast(new ChannelHandler[]{new DatagramPacketDecoder((MessageToMessageDecoder) new PowerStationReportDecoder(serviceName))});
         pipeline.addLast(new ChannelHandler[]{new BootNettyUdpSimpleChannelInboundHandler()});
+        pipeline.addLast(new PowerRequestModifyEncoder());
+    }
+
+    /**
+     * power1
+     * power2
+     * ...
+     *
+     * @param ctx
+     * @throws Exception
+     */
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        ModBusChannelManager.addChannel(serviceName, ctx.channel());
     }
 }

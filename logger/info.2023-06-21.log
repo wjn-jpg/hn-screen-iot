@@ -1,0 +1,71 @@
+2023-06-21 15:05:08 [ main:364 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 10183 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-21 15:05:08 [ main:366 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-21 15:05:09 [ main:784 ] - [ INFO ] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-06-21 15:05:09 [ main:791 ] - [ INFO ] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-06-21 15:05:09 [ main:1025 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-21 15:05:09 [ main:1030 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-21 15:05:09 [ main:1031 ] - [ INFO ] Starting service [Tomcat]
+2023-06-21 15:05:09 [ main:1031 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-21 15:05:09 [ main:1089 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-21 15:05:09 [ main:1089 ] - [ INFO ] Root WebApplicationContext: initialization completed in 697 ms
+2023-06-21 15:05:09 [ main:1139 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-21 15:05:09 [ main:1320 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-21 15:05:09 [ main:1321 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-21 15:05:09 [ main:1375 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-21 15:05:10 [ main:1629 ] - [ INFO ] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-06-21 15:05:10 [ main:1629 ] - [ INFO ] Channel 'application.errorChannel' has 1 subscriber(s).
+2023-06-21 15:05:10 [ main:1629 ] - [ INFO ] started bean '_org.springframework.integration.errorLogger'
+2023-06-21 15:05:10 [ main:1629 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-21 15:05:10 [ main:1642 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-21 15:05:10 [ main:1649 ] - [ INFO ] Started HnScreenApplication in 1.55 seconds (JVM running for 1.924)
+2023-06-21 15:05:10 [ main:1696 ] - [ INFO ] MQTT服务已启动 端口为:8088
+2023-06-21 15:05:10 [ nioEventLoopGroup-3-1:1724 ] - [ INFO ] 客户端与服务端建立连接...[id: 0x5703338b, L:/127.0.0.1:8088 - R:/127.0.0.1:61952]
+2023-06-21 15:05:10 [ nioEventLoopGroup-3-1:2043 ] - [ INFO ] MQTT接收到的发送类型===>CONNECT
+2023-06-21 15:05:10 [ main:2047 ] - [ INFO ] 成功开启MQTT服务...
+2023-06-21 15:05:10 [ nioEventLoopGroup-3-1:2049 ] - [ INFO ] MQTT接收到的发送类型===>SUBSCRIBE
+2023-06-21 15:05:10 [ nioEventLoopGroup-3-1:2050 ] - [ INFO ] 客户端5703338b订阅主题ntdq成功!
+2023-06-21 15:06:10 [ nioEventLoopGroup-3-1:62052 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-21 15:06:10 [ nioEventLoopGroup-3-1:62052 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:5703338b
+2023-06-21 15:07:04 [ http-nio-127.0.0.1-9090-exec-1:115805 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 15:07:04 [ http-nio-127.0.0.1-9090-exec-1:115805 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-06-21 15:07:04 [ http-nio-127.0.0.1-9090-exec-1:115806 ] - [ INFO ] Completed initialization in 1 ms
+2023-06-21 15:07:10 [ nioEventLoopGroup-3-1:122320 ] - [ INFO ] MQTT接收到的发送类型===>PINGREQ
+2023-06-21 15:07:10 [ nioEventLoopGroup-3-1:122320 ] - [ INFO ] MQTT 心跳包已经接受 来源channelID:5703338b
+2023-06-21 15:07:26 [ SpringApplicationShutdownHook:137694 ] - [ INFO ] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-06-21 15:07:26 [ SpringApplicationShutdownHook:137694 ] - [ INFO ] Channel 'application.errorChannel' has 0 subscriber(s).
+2023-06-21 15:07:26 [ SpringApplicationShutdownHook:137695 ] - [ INFO ] stopped bean '_org.springframework.integration.errorLogger'
+2023-06-21 15:07:26 [ SpringApplicationShutdownHook:137696 ] - [ INFO ] {dataSource-0} closing ...
+2023-06-21 15:08:15 [ main:336 ] - [ INFO ] Starting HnScreenApplication using Java 1.8.0_362 on wangjiniandeMacBook-Pro.local with PID 10229 (/Users/wangjinian/Downloads/JavaPro/hn-screen/target/classes started by wangjinian in /Users/wangjinian/Downloads/JavaPro/hn-screen)
+2023-06-21 15:08:15 [ main:338 ] - [ INFO ] The following 1 profile is active: "local"
+2023-06-21 15:08:15 [ main:715 ] - [ INFO ] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-06-21 15:08:15 [ main:722 ] - [ INFO ] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-06-21 15:08:15 [ main:944 ] - [ INFO ] Tomcat initialized with port(s): 9090 (http)
+2023-06-21 15:08:15 [ main:948 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-21 15:08:15 [ main:948 ] - [ INFO ] Starting service [Tomcat]
+2023-06-21 15:08:15 [ main:949 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.76]
+2023-06-21 15:08:15 [ main:998 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-06-21 15:08:15 [ main:998 ] - [ INFO ] Root WebApplicationContext: initialization completed in 636 ms
+2023-06-21 15:08:16 [ main:1040 ] - [ INFO ] 读取配置文件,初始化Redis连接池参数
+2023-06-21 15:08:16 [ main:1229 ] - [ INFO ] 读取配置文件,初始化所有ModBus客户端和服务端
+2023-06-21 15:08:16 [ main:1229 ] - [ INFO ] 读取配置文件,初始化所有ModBus串口
+2023-06-21 15:08:16 [ main:1269 ] - [ INFO ] 读取配置文件,初始化所有充电桩服务端
+2023-06-21 15:08:16 [ main:1513 ] - [ INFO ] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-06-21 15:08:16 [ main:1513 ] - [ INFO ] Channel 'application.errorChannel' has 1 subscriber(s).
+2023-06-21 15:08:16 [ main:1513 ] - [ INFO ] started bean '_org.springframework.integration.errorLogger'
+2023-06-21 15:08:16 [ main:1513 ] - [ INFO ] Starting ProtocolHandler ["http-nio-127.0.0.1-9090"]
+2023-06-21 15:08:16 [ main:1527 ] - [ INFO ] Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-21 15:08:16 [ main:1534 ] - [ INFO ] Started HnScreenApplication in 1.452 seconds (JVM running for 1.744)
+2023-06-21 15:08:16 [ main:1575 ] - [ INFO ] MQTT服务已启动 端口为:8088
+2023-06-21 15:08:16 [ nioEventLoopGroup-3-1:1603 ] - [ INFO ] 客户端与服务端建立连接...[id: 0x95db4c8f, L:/127.0.0.1:8088 - R:/127.0.0.1:62090]
+2023-06-21 15:08:16 [ nioEventLoopGroup-3-1:1921 ] - [ INFO ] MQTT接收到的发送类型===>CONNECT
+2023-06-21 15:08:16 [ main:1925 ] - [ INFO ] 成功开启MQTT服务...
+2023-06-21 15:08:16 [ nioEventLoopGroup-3-1:1927 ] - [ INFO ] MQTT接收到的发送类型===>SUBSCRIBE
+2023-06-21 15:08:16 [ nioEventLoopGroup-3-1:1928 ] - [ INFO ] 客户端95db4c8f订阅主题ntdq成功!
+2023-06-21 15:08:22 [ http-nio-127.0.0.1-9090-exec-2:7281 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 15:08:22 [ http-nio-127.0.0.1-9090-exec-2:7282 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-06-21 15:08:22 [ http-nio-127.0.0.1-9090-exec-2:7282 ] - [ INFO ] Completed initialization in 0 ms
+2023-06-21 15:08:41 [ http-nio-127.0.0.1-9090-exec-1:26701 ] - [ WARN ] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 2]]
+2023-06-21 15:09:14 [ SpringApplicationShutdownHook:59354 ] - [ INFO ] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-06-21 15:09:14 [ SpringApplicationShutdownHook:59355 ] - [ INFO ] Channel 'application.errorChannel' has 0 subscriber(s).
+2023-06-21 15:09:14 [ SpringApplicationShutdownHook:59355 ] - [ INFO ] stopped bean '_org.springframework.integration.errorLogger'
+2023-06-21 15:09:14 [ SpringApplicationShutdownHook:59357 ] - [ INFO ] {dataSource-0} closing ...

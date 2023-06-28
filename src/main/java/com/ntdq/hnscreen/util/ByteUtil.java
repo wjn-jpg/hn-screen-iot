@@ -306,6 +306,8 @@ public class ByteUtil {
     }
 
 
+
+
     public static void main(String[] agrwu) {
         byte[] bytes = new byte[4];
         bytes[0] = 0;
